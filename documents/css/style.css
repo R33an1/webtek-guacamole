@@ -1,0 +1,18 @@
+html{
+    background-color: lightgray;
+    color: #323232;
+}
+
+article{
+    margin: auto;
+    width: 60%;
+}
+
+section{
+    border-top: 2px black solid;
+    text-align: justify;
+}
+
+header{
+
+}
