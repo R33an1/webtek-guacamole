@@ -1,6 +1,7 @@
 html{
     background-color: lightgray;
     color: #323232;
+    font-family: Georgia, sans-serif;
 }
 
 article{
@@ -13,6 +14,6 @@ section{
     text-align: justify;
 }
 
-header{
-
+header h1{
+  font-size: 2ch;
 }
