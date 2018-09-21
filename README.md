@@ -2,8 +2,8 @@
 
 Prosjekt fra NTNU-Gløshaugen i sammenheng med faget WebTek.
 
-P1 Projekt Krav
-## Patrick, Vegard, Magnar, Kaspar og Amund
+## P1 Projekt Krav
+atrick, Vegard, Magnar, Kaspar og Amund
 19. September 2018
 
 
