@@ -1,13 +1,13 @@
-#Garvergården Holding A/S
+# Garvergården Holding A/S
 
 Prosjekt fra NTNU-Gløshaugen i sammenheng med faget WebTek.
 
 P1 Projekt Krav
-##Patrick, Vegard, Magnar, Kaspar og Amund
+## Patrick, Vegard, Magnar, Kaspar og Amund
 19. September 2018
 
 
-##Vår klient
+## Vår klient
 Vår klient, Vivi Lunke Røhne, er næringsdrivende i Elverum, Hedmark,
 hvor hun driver utleie i fire bygårder. Gårdene har leiligheter,
 butikklokaler og kontorer, alle i varierende størrelser.
@@ -20,7 +20,7 @@ web-utvikling har hun ikke mange krav til form, men heller til
 innhold. Altså informasjon, bilder, og annet.
 
 
-##Mål og formål
+## Mål og formål
 Nettsiden vil hovedsakelig bli brukt som en informasjonskilde for
 potensielle leietakere, slik at de har en enkel måte å tilegne seg
 noe informasjon før de eventuelt bestemmer seg for å leie. Feks.
@@ -32,7 +32,7 @@ Vivi ønsker ikke å administere siden, og den vil derfor
 hovedsakelig være informativ.
 
 
-##Brukergruppe
+## Brukergruppe
 Nettsidens brukergruppe består av personer som er på utkikk etter ny
 bolig eller næringslivslokaler. De fleste leietakerne av boligene er
 eldre og gjerne pensjonerte, nettsiden må derfor ta hensyn til
@@ -41,7 +41,7 @@ presenteres slik at besøkende enkelt finner relevant informasjon
 til sitt formål.
 
 
-##Nettsidens innhold og organisering
+## Nettsidens innhold og organisering
 Siden vil bli delt opp i de fire byggene under datterselskapene til
 Garvergården Holding A/S. Altså Garvergården A/S, Lunkegården A/S,
 Kalkhuset A/S. I tillegg til dette vil vi ha en hjemside og en side
@@ -57,7 +57,7 @@ navigasjonsbaren har en dropdown meny, denne vil linke til hver
 underside.
 
 
-##Spesifikke preferanser
+## Spesifikke preferanser
 * Selskapets logo skal alltid være synlig.
 * Brukeren skal kunne navigere til enhver side innen 3 museklikk.
   Det er viktig at relevant informasjon blir vist ved navigering,
@@ -76,7 +76,7 @@ underside.
   navigerbar.
 
 
-##Domene, hosting og tekniske utfordringer
+## Domene, hosting og tekniske utfordringer
 * Garvergården Holding A/S, eier allerede et domene som vil bli brukt:
   www.garvergården.no.
 * Nettsidens zoom-funksjon må fungere uten å obstruere sidens innhold.
