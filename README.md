@@ -1,4 +1,4 @@
-# Garvergården Holding A/S Projekt
+# Garvergården Holding A/S Prosjekt
 
 Prosjekt fra NTNU-Gløshaugen i sammenheng med faget WebTek.
 
