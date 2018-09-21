@@ -5,7 +5,7 @@ Prosjekt fra NTNU-Gløshaugen i sammenheng med faget WebTek.
 Patrick, Vegard, Magnar, Kaspar og Amund
 19. September 2018
 
-### P1 Projekt Krav
+# P1 Projekt Krav
 
 ## Vår klient
 Vår klient, Vivi Lunke Røhne, er næringsdrivende i Elverum, Hedmark,
