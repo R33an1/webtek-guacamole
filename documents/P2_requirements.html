@@ -35,18 +35,76 @@
         <h2>Hensikt, Mål og Målgruppe</h2>
         <p>
           Hensikten med vår nettside er å sørge for at informasjon relatert til Garvergården er
-          lett tilgjengelig for potensielle leietakere. Dette er for å minimere lengden potensielle
-          leietakere trenger å gå for å tilegne seg informasjon om Garvergården A/S og deres underselskaper.
-          Målet blir dermed å redusere vanskelighetsgraden og øke oversiktligheten for informasjon, slik
-          at den potensielle leietakeren lett får tak i den informasjonen hun/han søker etter.
+          lett tilgjengelig for brukeren. Dette er for å gjør det lettere for brukeren
+          å få informasjon om lokalene. Målet blir dermed å skape et enkelt design
+          med god oversiktlighet, slik at brukeren lett får tak i den informasjonen hun/han søker etter.
           Dette ønskes å oppnås ved å ha en intuitiv og oversiktlig nettside, med lite "kluss" og effektiv
           bruk av symboler for å indikere hva en gitt funksjon gjør. Dette er spesielt viktig ettersom at
-          vår målgruppe er potensielle leietakere, hvor det er stor konkurranse og det er viktig å "kapre"
-          personen tidlig, noe som er vanskelig dersom nettsiden er forvirrende for brukeren.
-           I tillegg er de fleste leietakere eldre og gjerne pensjonerte, som betyr at
+          vår målgruppe er folk som vil leie, hvor det er stor konkurranse og det er viktig å "kapre"
+          personen tidlig. Dette er vanskelig dersom nettsiden er forvirrende for brukeren.
+          Klienten vår foretrekker leietakere som er eldre og gjerne pensjonerte, som betyr at
           det bør vær et fokus på intuitivitet, få forvirrende elementer og konsistent bruk av farge.
-
         </p>
+      </section>
+      <section>
+        <h2>Navigasjonsstruktur</h2>
+        <p>
+          Navigasjonsstrukturen til nettsiden er designet slik at det skal være mulig å komme til
+          en gitt side, uavhengig av hviken side en er på. Med unntak av hovedsiden, skjer dette via en navigasjonsbar *insert link til navbar og eksempel på dropdown*.
+          På denne navigasjonsbaren skal det være tilgang til fire forskjellige næringslokaler som igjen leder
+          til en drop-down meny med linker til 3 sider hver. Disse er naturligvis systematisk inndelt.
+          Det vil si at det skal være tilgang til 12 sider, pluss hovedsiden som blir 13 totalt.
+          Logoen til garvergården blir da knappen tilbake til hovedmenyen. På hovedmenyen, løses navigasjonen
+          ved å ha fire ikoner med undermenyer som har tilgang til 3 sider hver. *insert figure of hovedsiden*
+        </p>
+
+
+        <p>
+          Målet med denne navigasjonsstrukturen er å gi brukeren den største navigasjonsfriheten som er mulig.
+          Dette oppfyller en av våre krav, som er å holde informasjonen lett tilgjengelig. I den hensikt å holde
+          siden ryddig og oversiktlig anså vi det som lurt å bruke en navbar med drop-down undermenyer. Dermed har
+          vi oppnådd vårt mål å holde siden oversiktig og ryddig.
+        </p>
+      </section>
+      <section>
+      <h2>Innhold</h2>
+      <p>Ettersom at hver av de fire lokalene har en hovedside, en leilighetsside og en næringsslivslokale-side
+      vil det være 4 unike stil-formater på de 12 sidene. Det vil si at det vil være 4 unike formater,
+      en til hovedsiden til nettsiden, en til hovedsiden til et gitt bygg, en til leilighetene i bygget
+      og en til næringslivslokalene i bygget.
+      </p>
+      <p>
+      <h3>1. Hovedsiden til nettsiden </h3>
+      Hovedsiden til nettsiden vil begynne med et stort bilde av et av lokalene, hvor logoen til
+      Garvergården A/S skal fades inn og bildet i bakgrunnen skal blurres ut i tillegg til å bli
+      "greyscaled". Dette skal gjøres i JS.
+      Under dette bildet på siden skal det være en "Om oss" paragraf, som skal kort fortelle Brukeren
+      hva Garvergården A/S tilbyr kundene sine.
+      Under denne teksten skal det være 4 kort, side om side som skal inneholde et bilde av hver av de 4 av lokalene.
+      Under hver av disse bildene skal det være en link til hver av de tre underkategoriene til hvert lokale,
+      dvs. Hovedsiden til lokalene, leilighetene i lokalet og næringslivslokalene i lokalet. Dette er likt på
+      alle fire kortene. Når disse er trykket, vil deres respektive html, css og js sider bli lastet inn.
+      *Insert bilde av kortene*
+      </p>
+      <p>
+
+      Under dette igjen, vil det være en paragraf og tittel til familiebedriften. Denne teksten skal kort beskrive
+      familiens forhold til bedriften. I tillegg vil det være et bilde på høyre side via "Float-right". Dette utføres i css.
+      Under dette igjen vil det være en footer, med kontakt-og besøksinformasjon til Garvergården A/S. Denne skal være tydelig
+      adskilt ifra resten av siden ved et fargeskifte til (#677077) ifra den normale bakgrunnens (#FEFEFE). Her skal det også være
+      et bilde av kontaktpersonen til Garvegården A/S. Dette bildet skal også være float-right.
+      Overordnet skal alle undertitler på siden være tydelig adskilt ifra bunnteksten ved hjelp av markerte rektangler i fargen (#252839)
+      og ha en border bottom med farge (#F2B632).
+      </p>
+      <p>
+        Hensikten med den inndelingen vi har, er å skape en oversiktlig hovedside med lite kluss. Oppbyggingen av siden hjelper oss å
+        tildig forklare hvilke tjenester Garvergården A/S utfører, slik at brukeren kjapt får en oversikt. I tillegg bygger vi opp "trær"
+        med over og underelementer, slik at informasjonen er presentert systematisk. Dette tillater brukeren å se hvilke sider som tilhører
+        hvert lokale. Ett eksempel på dette er bruken av "cards" som visuelt systematiserer informasjonen for brukeren. Til slutt har vi
+        footeren, som gir brukeren rask tilgang til kontaktinformasjon, slik at han/hun lett kan få kontakt dersom de er interessert.
+        Denne footeren er lik på alle sidene, slik at kontaktinformasjonen er alltid lett tilgjengelig.
+
+      </p>
       </section>
 
     </article>
