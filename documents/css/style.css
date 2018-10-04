@@ -6,7 +6,7 @@ html{
 
 article{
     margin: auto;
-    width: 60%;
+    width: 50%;
 }
 
 section{
@@ -15,5 +15,5 @@ section{
 }
 
 header h1{
-  font-size: 2ch;
+    font-size: 2ch;
 }

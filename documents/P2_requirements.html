@@ -50,16 +50,22 @@
         <h2>Navigasjonsstruktur</h2>
         <p>
           Navigasjonsstrukturen til nettsiden er designet slik at det skal være mulig å komme til
-          en gitt side, uavhengig av hviken side en er på. Med unntak av hovedsiden, skjer dette via en navigasjonsbar *insert link til navbar og eksempel på dropdown*.
+          en gitt side, uavhengig av hviken side en er på. Med unntak av hovedsiden, skjer dette via en navigasjonsbar
+          <br>
+          <br>
+          <img src="p2_bilder/navbar.png" alt="Bilde av navbaren" width="800px">
+          <br>
+          <br>
           På denne navigasjonsbaren skal det være tilgang til fire forskjellige næringslokaler som igjen leder
           til en drop-down meny med linker til 3 sider hver. Disse er naturligvis systematisk inndelt.
           Det vil si at det skal være tilgang til 12 sider, pluss hovedsiden som blir 13 totalt.
           Logoen til garvergården blir da knappen tilbake til hovedmenyen. På hovedmenyen, løses navigasjonen
-          ved å ha fire ikoner med undermenyer som har tilgang til 3 sider hver. *insert figure of hovedsiden*
-        </p>
-
-
-        <p>
+          ved å ha fire ikoner med undermenyer som har tilgang til 3 sider hver.
+          <br>
+          <br>
+          <img src="p2_bilder/hovedside_cards.png" alt="Cards på hovdesiden" width="750px">
+          <br>
+          <br>
           Målet med denne navigasjonsstrukturen er å gi brukeren den største navigasjonsfriheten som er mulig.
           Dette oppfyller en av våre krav, som er å holde informasjonen lett tilgjengelig. I den hensikt å holde
           siden ryddig og oversiktlig anså vi det som lurt å bruke en navbar med drop-down undermenyer. Dermed har
@@ -68,12 +74,12 @@
       </section>
       <section>
       <h2>Innhold</h2>
-      <p>Ettersom at hver av de fire lokalene har en hovedside, en leilighetsside og en næringsslivslokale-side
+      <p>
+      Ettersom at hver av de fire lokalene har en hovedside, en leilighetsside og en næringsslivslokale-side
       vil det være 4 unike stil-formater på de 12 sidene. Det vil si at det vil være 4 unike formater,
       en til hovedsiden til nettsiden, en til hovedsiden til et gitt bygg, en til leilighetene i bygget
       og en til næringslivslokalene i bygget.
-      </p>
-      <p>
+      <br>
       <h3>1. Hovedsiden til nettsiden </h3>
       Hovedsiden til nettsiden vil begynne med et stort bilde av et av lokalene, hvor logoen til
       Garvergården A/S skal fades inn og bildet i bakgrunnen skal blurres ut. Dette skal gjøres i JS.
@@ -84,8 +90,7 @@
       dvs. Hovedsiden til lokalene, leilighetene i lokalet og næringslivslokalene i lokalet. Dette er likt på
       alle fire kortene. Når disse er trykket, vil deres respektive html, css og js sider bli lastet inn.
       *Insert bilde av kortene*
-      </p>
-      <p>
+      <br>
 
       Under dette igjen, vil det være en paragraf og tittel til familiebedriften. Denne teksten skal kort beskrive
       familiens forhold til bedriften. I tillegg vil det være et bilde på høyre side via "Float-right". Dette utføres i css.
@@ -95,8 +100,7 @@
       Overordnet skal alle undertitler på siden være tydelig adskilt ifra bunnteksten ved hjelp av markerte rektangler i fargen (#252839)
       og ha en border bottom med farge (#F2B632).
       I tillegg skal alle a-tags skifte farge om til (#F2B632) når musen holdes over linken.
-      </p>
-      <p>
+      <br>
         Hensikten med den inndelingen vi har, er å skape en oversiktlig hovedside med lite kluss. Oppbyggingen av siden hjelper oss å
         tildig forklare hvilke tjenester Garvergården A/S utfører, slik at brukeren kjapt får en oversikt. I tillegg bygger vi opp "trær"
         med over og underelementer, slik at informasjonen er presentert systematisk. Dette tillater brukeren å se hvilke sider som tilhører
@@ -105,6 +109,37 @@
         Denne footeren er lik på alle sidene, slik at kontaktinformasjonen er alltid lett tilgjengelig.
 
       </p>
+      </section>
+      <section>
+      <h3>2. Hovedside bygning</h3>
+        <p>
+        Hver av bygningene vil ha en hovedside med lik layout. Denne siden inneholder generell info om den
+        spesifikke bygningen, og den har tydelig og rask navigering til undersidene.
+        <br>
+        På toppen har vi et stort bilde av bygningen med navnet på den foran. Under bildet har vi en navbar
+        som er sticky og følger med på toppen av siden når vi scroller forbi bildet.
+        <br>
+        I hovedseksjonen av siden har vi delt den opp i bokser, der de to boksene øverst til venstre viser
+        plasseringen av bygningen på et kart, og har litt generell informasjon om hvordan den ligger i forhold
+        til kollektiv transport, butikker, sentrum osv. Dette beskriver vi i punkter og vi skal prioritere å
+        få med de tingene som er relevante både for potensielle boligleietakere og næringslivsdrivende ettersom
+        denne siden gjelder for begge. Kartet selv tenker vi å bare ha som et utsnitt fra google maps og ikke
+        som et interaktivt kart ettersom det er litt utenfor det vi kan gjøre i denne oppgaven.
+        <br>
+        Den tredje boksen skal ha noen interessante korte punkter med informasjon om hva som er spesielt med
+        bygningen. Til høyre har vi plassert to store knapper (i gult som motsatt komplementærfarge for å
+        framheve), som tar brukeren videre til undersidene.
+        <br>
+        Etter de fire boksene kommer en større punktliste med praktisk info om hvilke fasiliteter bygningen har
+        (rullestoltilgang, heis, wifi osv.). Igjen blir det viktig at vi prioriterer det som er relevant for
+         begge type leietakere og at vi sparer det spesifikke for undersidene. For eksempel er det ikke relevant
+         for en boligleietaker å vite hva slags inngang det er til forretningene på bakkenivå.
+         <br>
+        Til slutt har vi en liten tekst om nærområdet og hva som gjør at det er et fint område å bo eller sette
+        opp forretning. Dette tenkte vi å gjøre til en litt mer subjektiv tekst i motsetning til faktaboksene over.
+        Ved siden av teksten skal vi ha et bildegalleri med bilder av bygningen fra utsiden, og områdene rundt.
+        <br>
+        <img src="bilder/Bygninghovedsidehel.png" alt="Bygninghovedside" width = "500px">
       </section>
       <section>
         <h3>3. Leilighetssiden</h3>
@@ -116,8 +151,7 @@
           et stort bilde øverst(slik på andre sider) og går rett på sak.
           Etter dette legger vi inn en innledning til leilighetene i dette lokalet,
           hvor vi kort og overordnet forteller om leilighetene ved lokalet.
-        </p>
-        <p>
+        <br>
           Under dette igjen, skal det stå en header med "Kartinformasjon" med en
           tilhørende tekst med Kartinformasjon under. Her skal det stå om plasseringen
           til leilighetene ved lokalet og praktisk informasjon relatert til området rundt
@@ -130,8 +164,7 @@
           linker til forskjellige deler av nettsiden. hensikten med dette er hvis brukeren tidligere
           har besøkt siden, og leter etter et spesifikt stykke med informasjon, vil
           brukeren lett kunne hoppe tilbake til samme punkt.
-        </p>
-        <p>
+        <br>
           Under dette, skal det stå en header med "Pratisk informasjon" og under dette en
           punktsamling med forskjellige stykker med praktisk informasjon relatert til leilighetene
           Ett eksempel på dette kan f.eks. være Heistilang/rullestoltilgang, forhold til dyr osv.
@@ -147,7 +180,8 @@
         </p>
       </section>
       <section>
-        <h2>4.Næringslivssiden</h2>
+        <p>
+        <h3>4.Næringslivssiden</h3>
         Lignende til leilighetssiden skal denne siden begynne med navbar, innledning og
         quick reference. Disse tre elementene skal ha samme hensikt lignende til leiligssiden,
         men i dette tilfellet så er det relatert til næringslivslokalene. Videre kommer vi ned
@@ -156,8 +190,7 @@
         potensielle leietakere av lokaler, er det viktig å få fram informasjon som  er viktig
         for leiere av slike lokaler. Hensikten med dette er å la all informasjon som kan bli gjort tilgjengelig
         for brukren, vil bli gjort tilgjengelig for brukeren.
-      </p>
-      <p>
+        <br>
          Til høyre for denne paragrafen, skal det være
         en tekst med tittelen "Driftsrelatert". Denne teksten skal kort beskrive de fordelene som er ved
         driftslokalene. F.eks lastehavn, kjøkken tilgjengelig i kontor, toaletter o.l. Til høyre for dette igjen
@@ -165,8 +198,7 @@
         på de oppgitte lokalene. Hensikten med dette er å gi brukeren lett tilgang til spesifikasjoner til de forskjellige
         lokalene. Dette bygger igjen på vårt mål av lett tilgjengelig informasjon. På bunnen av denne siden skal det være
         en footer med kontaktinformasjon i samme stil og hensikt som på de andre sidene.
-        </menu>
-        <p></p>
+        </p>
       </section>
     </article>
   </body>
