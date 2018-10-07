@@ -17,3 +17,14 @@ section{
 header h1{
     font-size: 2ch;
 }
+table, td, th{
+  border: 1px solid black;
+}
+table {
+  border-collapse: collapse;
+  text-align: left;
+}
+th{
+  height: 50px;
+  text-align: left
+}
