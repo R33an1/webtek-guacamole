@@ -24,7 +24,7 @@ img{
 }
 
 #referencePic, #mobilPic{
-    
+    float: right;
     width: 20%;
     padding-left: 2%;
     padding-bottom: 2%;
@@ -32,6 +32,7 @@ img{
 
 #mobilPic{
     width: 40%;
+    float: none;
 }
 
 th, td {
