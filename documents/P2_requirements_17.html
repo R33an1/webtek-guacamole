@@ -191,8 +191,8 @@
                         plasseringen av bygningen på et kart, og har litt generell informasjon om hvordan den ligger i forhold
                         til kollektiv transport, butikker, sentrum osv. Dette beskriver vi i punkter og vi skal prioritere å
                         få med de tingene som er relevante både for potensielle boligleietakere og næringslivsdrivende ettersom
-                        denne siden gjelder for begge. Kartet selv tenker vi å bare ha som et utsnitt fra google maps og ikke
-                        som et interaktivt kart ettersom det er litt utenfor det vi kan gjøre i denne oppgaven.
+                        denne siden gjelder for begge. Kartet selv skal være en google dynamic API og bare vise grunnleggende informasjon.
+                        Resten skal bli forklart i "kartinformasjon"
                     </p>
                     <p>
                         Den tredje boksen skal ha noen interessante korte punkter med informasjon om hva som er spesielt med
@@ -233,7 +233,8 @@
                             til leilighetene ved lokalet og praktisk informasjon relatert til området rundt
                             f.eks. avstander til togstasjoner, bussholdeplasser osv. Dette er her for å presentere
                             de praktiske grunnene til å bo i disse leilighetene.
-                            Til høyre for dette igjen, skal det være et kart med oversikt over området rundt.
+                            Til høyre for dette igjen, skal det være et google API kart som viser plasseringen
+                            til selve bygget
                             Hensikten med dette er å støtte opp med kartinformasjonsteksten og vise plasseringen
                             til de diverse tingene som ble nevnt.
                         </p>
@@ -317,120 +318,16 @@
                                 større eller mindre som sitter fast til høyre under navbaren. Vi valgte å ta med disse for å gjøre
                                 siden vår mer brukervennlig for folk med dårlig syn, særlig eldre som vi vet utleieren vår foretrekker
                                 å leie ut til.</li>
+                            <li> GOOGLE dynamic map: På sidene hvor det er illustrert kart, skal vi ha et dynamisk kart med punkt
+                                knyttet til plasseringen av selve bygget. De ulike kartene skal ha begynnelsespunkt ved bygningene
+                                Vi har med disse kartene for å illustrere plasseringen til bygget slik at personen lett kan finne
+                                fram til adressen, dersom de ønsker å se bygningen selv.
+
                         </ol>
                     </section>
                     <section>
-                        <h2 class="mappestruktur"> 8. fremdrifts plan  </h2>
-                        <ul>
-                            <li>index.html</li>
-                            <li>javaskript/</li>
-                            <ul>
-                                <li>navbar/</li>
-                                <ul>
-                                    <li>dropp_down.js</li>
-                                    <li>skrif_storelse</li>
-                                </ul>
-                                <li>album.js</li>
-                                <li>fade_inn.js</li>
-                            </ul>
-                            <li>garvegarden/</li>
-                            <ul>
-                                <li>info.html</li>
-                                <li>leiligheter.html</li>
-                                <li>laringsliv.html</li>
-                            </ul>
-                            <li>lunkegarden/</li>
-                            <ul>
-                                <li>info.html</li>
-                                <li>leiligheter.html</li>
-                                <li>laringsliv.html</li>
-                            </ul>
-                            <li>gimle/</li>
-                            <ul>
-                                <li>info.html</li>
-                                <li>leiligheter.html</li>
-                                <li>laringsliv.html</li>
-                            </ul>
-                            <li>Parkgarden/</li>
-                            <ul>
-                                <li>info.html</li>
-                                <li>leiligheter.html</li>
-                                <li>laringsliv.html</li>
-                            </ul>
-                            <li>img</li>
-                            <ul>
-                                <li>logo.png</li>
-                                <li>garvegarden/</li>
-                                <ul>
-                                    <li>bygg.jpg</li>
-                                    <li>kart</li>
-                                    <ul>
-                                        <li>kart_info.png</li>
-                                        <li>kart_leilighet.png</li>
-                                        <li>kart_naringsliv.png</li>
-                                    </ul>
-                                    <li>album/</li>
-                                    <ul>
-                                        <li>Garvergarden_1.jpg</li>
-                                        <li>Garvergarden_2.jpg</li>
-                                        <li>Garvergarden_3.jpg</li>
-                                        <li>...</li>
-                                    </ul>
-                                </ul>
-                                <li>Lunkegarden/</li>
-                                <ul>
-                                    <li>bygg.jpg</li>
-                                    <li>kart</li>
-                                    <ul>
-                                        <li>kart_info.png</li>
-                                        <li>kart_leilighet.png</li>
-                                        <li>kart_naringsliv.png</li>
-                                    </ul>
-                                    <li>album/</li>
-                                    <ul>
-                                        <li>Lunkegarden_1.jpg</li>
-                                        <li>Lunkegarden_2.jpg</li>
-                                        <li>Lunkegarden_3.jpg</li>
-                                        <li>...</li>
-                                    </ul>
-                                </ul>
-                                <li>gimle/</li>
-                                <ul>
-                                    <li>bygg.jpg</li>
-                                    <li>kart</li>
-                                    <ul>
-                                        <li>kart_info.png</li>
-                                        <li>kart_leilighet.png</li>
-                                        <li>kart_naringsliv.png</li>
-                                    </ul>
-                                    <li>album/</li>
-                                    <ul>
-                                        <li>gimle_1.jpg</li>
-                                        <li>gimle_2.jpg</li>
-                                        <li>gimle_3.jpg</li>
-                                        <li>...</li>
-                                    </ul>
-                                </ul>
-                                <li>Parkgarden/</li>
-                                <ul>
-                                    <li>bygg.jpg</li>
-                                    <li>kart</li>
-                                    <ul>
-                                        <li>kart_info.png</li>
-                                        <li>kart_leilighet.png</li>
-                                        <li>kart_naringsliv.png</li>
-                                    </ul>
-                                    <li>album/</li>
-                                    <ul>
-                                        <li>Parkgarden_1.jpg</li>
-                                        <li>Parkgarden_2.jpg</li>
-                                        <li>Parkgarden_3.jpg</li>
-                                        <li>...</li>
-                                    </ul>
-                                </ul>
-                            </ul>
-                        </ul>
-                        <table class="tabell">
+                        <h2> 8. Fremdriftsplan  </h2>
+                        <table>
                             <tr>
                                 <td></td>
                                 <th>Fil</th>
@@ -443,44 +340,52 @@
                                 <td>1</td>
                                 <td>logo.png</td>
                                 <td>firmaes logo</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>Amund</td>
+                                <td>kort</td>
+                                <td>07.10.2018</td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>index.html</td>
                                 <td>hovedside</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>Magnar</td>
+                                <td>ordinær</td>
+                                <td>16.10.18</td>
                             </tr>
                             <tr>
                                 <td>3</td>
-                                <td>fade.js</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>main.js (modularitet)</td>
+                                <td>Legge grunnlag for modulær implementering av HTML i flere html-filer.</td>
+                                <td>Amund</td>
+                                <td>ordinær</td>
+                                <td>16.10.18</td>
                             </tr>
                             <tr>
                                 <td>4</td>
-                                <td>skrift_endring.js</td>
-                                <td>endrer størrelse på skrift</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>main.js (fade)</td>
+                                <td>fade inn for bedriftnavn på forside</td>
+                                <td>Patrick / Vegard</td>
+                                <td>kort</td>
+                                <td>16.10.18</td>
                             </tr>
                             <tr>
                                 <td>5</td>
-                                <td>.../info.html</td>
-                                <td>css & sidestruktur for alle info-sider</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>main.js (skrift_endring)</td>
+                                <td>endrer størrelse på skrift</td>
+                                <td>Magnar / Amund</td>
+                                <td>vanskelig</td>
+                                <td>23.10.18</td>
                             </tr>
                             <tr>
                                 <td>6</td>
+                                <td>.../info.html</td>
+                                <td>css & sidestruktur for alle info-sider</td>
+                                <td>Vegar</td>
+                                <td>23.10.18</td>
+                                <td>lang</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
                                 <td>
                                     .../info.html-teksten <br>
                                     <br>
@@ -489,21 +394,21 @@
                         Parkgarden<br>
                         garvegarden<br>
                     </td>
-                                <td> generell informasjon om bygg</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>.../leilighet.html</td>
-                                <td>css & sidestruktur for alle leilighet-sider</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>Generell informasjon om bygg</td>
+                                <td>delt</td>
+                                <td>lang</td>
+                                <td>23.10.18</td>
                             </tr>
                             <tr>
                                 <td>8</td>
+                                <td>.../leilighet.html</td>
+                                <td>css & sidestruktur for alle leilighet-sider</td>
+                                <td>Patrick / Amund</td>
+                                <td>kort</td>
+                                <td>23.10.19</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
                                 <td>
                                     .../leilighet.html-teksten <br>
                                     <br>
@@ -513,20 +418,20 @@
                         garvegarden<br>
                     </td>
                                 <td>spesifikk informasjon rettet til leietakere av leiligheter</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>9</td>
-                                <td>.../naringsliv.html</td>
-                                <td>css & sidestruktur for alle naringsliv-sider</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>delt</td>
+                                <td>lang</td>
+                                <td>23.10.18</td>
                             </tr>
                             <tr>
                                 <td>10</td>
+                                <td>.../naringsliv.html</td>
+                                <td>css & sidestruktur for alle naringsliv-sider</td>
+                                <td>Patrick / Amund</td>
+                                <td>kort</td>
+                                <td>23.10.18</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
                                 <td>
                                     .../naringsliv.html-teksten <br>
                                     <br>
@@ -536,35 +441,112 @@
                         garvegarden<br>
                     </td>
                                 <td>spesifikk informasjon rettet til naringslivet</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>11</td>
-                                <td>album.js</td>
-                                <td> programmet skal henter relevante bilder og lager ett album av disse</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>delt</td>
+                                <td>lang</td>
+                                <td>30.10.18</td>
                             </tr>
                             <tr>
                                 <td>12</td>
-                                <td>Kart.js</td>
-                                <td>bildet av ett kart, skal ha min. en zoom-funksjon</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>main.js(album)</td>
+                                <td> programmet skal henter relevante bilder og lager ett album av disse</td>
+                                <td>Kaspar</td>
+                                <td>lang</td>
+                                <td>23.10.18</td>
                             </tr>
                             <tr>
                                 <td>13</td>
-                                <td>dropp_down.js</td>
+                                <td>Kart</td>
+                                <td>Imbedd kart v.h.a. google maps. </td>
+                                <td>Amund</td>
+                                <td>ordinær</td>
+                                <td>23.10.18</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>main.js(dropp_down)</td>
                                 <td>intern linking</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>Amund</td>
+                                <td>lang</td>
+                                <td>23.10.18</td>
                             </tr>
                         </table>
+                        <h3>Mappestruktur</h3>
+                        <ul>
+                            <li>index.html</li>
+                            <li>main.js</li>
+                            <li>garvegarden/</li>
+                            <ul>
+                                <li>info.html</li>
+                                <li>leiligheter.html</li>
+                                <li>naeringsliv.html</li>
+                            </ul>
+                            <li>lunkegarden/</li>
+                            <ul>
+                                <li>info.html</li>
+                                <li>leiligheter.html</li>
+                                <li>naeringsliv.html</li>
+                            </ul>
+                            <li>gimle/</li>
+                            <ul>
+                                <li>info.html</li>
+                                <li>leiligheter.html</li>
+                                <li>naeringsliv.html</li>
+                            </ul>
+                            <li>parkgarden/</li>
+                            <ul>
+                                <li>info.html</li>
+                                <li>leiligheter.html</li>
+                                <li>naeringsliv.html</li>
+                            </ul>
+                            <li>img</li>
+                            <ul>
+                                <li>logo.png</li>
+                                <li>garvegarden/</li>
+                                <ul>
+                                    <li>bygg.jpg</li>
+                                    <li>album/</li>
+                                    <ul>
+                                        <li>Garvergarden_1.jpg</li>
+                                        <li>Garvergarden_2.jpg</li>
+                                        <li>Garvergarden_3.jpg</li>
+                                        <li>...</li>
+                                    </ul>
+                                </ul>
+                                <li>lunkegarden/</li>
+                                <ul>
+                                    <li>bygg.jpg</li>
+                                    <li>album/</li>
+                                    <ul>
+                                        <li>Lunkegarden_1.jpg</li>
+                                        <li>Lunkegarden_2.jpg</li>
+                                        <li>Lunkegarden_3.jpg</li>
+                                        <li>...</li>
+                                    </ul>
+                                </ul>
+                                <li>gimle/</li>
+                                <ul>
+                                    <li>bygg.jpg</li>
+                                    <li>album/</li>
+                                    <ul>
+                                        <li>gimle_1.jpg</li>
+                                        <li>gimle_2.jpg</li>
+                                        <li>gimle_3.jpg</li>
+                                        <li>...</li>
+                                    </ul>
+                                </ul>
+                                <li>parkgarden/</li>
+                                <ul>
+                                    <li>bygg.jpg</li>
+                                    <li>album/</li>
+                                    <ul>
+                                        <li>Parkgarden_1.jpg</li>
+                                        <li>Parkgarden_2.jpg</li>
+                                        <li>Parkgarden_3.jpg</li>
+                                        <li>...</li>
+                                    </ul>
+                                </ul>
+                            </ul>
+                        </ul>
                     </section>
 
     </article>
