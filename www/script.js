@@ -41,3 +41,23 @@ header.innerHTML = ("<header>"
 +       "</ul>"
 +   "</header>");
 
+footer = document.querySelector("footer");
+
+footer.innerHTML = ("<div>"
++       "<div>"
++           "<h4>Kontaktinformasjon</h4>"
++       "</div>"
++       "<div>"
++           "Telefon: <br>"
++           "E-Post:" 
++       "</div>"
++   "</div>"
++   "<div>"
++       "<div>"
++           "<h4>Besøksinformasjon</h4>"
++       "</div>"
++       "<div>"
++           "Åpningstider: <br>"
++           "Adresse:"
++       "</div>"
++   "</div>");
