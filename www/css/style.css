@@ -1,0 +1,92 @@
+body{
+    margin: auto;
+}
+
+header{
+    position: sticky;
+    display: block;
+    width: 100%;
+    font-family: 'Spectral SC', sans-serif;
+    padding: 0;  
+}
+
+header ul{
+    margin: auto;
+    width: inherit;
+    font-size: 0;
+    background-color: #252839;
+    color: #FEFEFE;
+    border-bottom: #F2B632 solid 2px;
+    padding: 0;
+}
+
+.drop{
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.drop .drop-title{
+    width: 100%;
+    display: block;
+    font-size: 18px;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+.drop #home img{
+    
+    display: inline-block;
+    width: 40%;
+    object-fit: contain;
+}
+
+#home{
+    width: 100%;
+}
+
+.drop:hover .drop-content{
+    display: block;
+}
+
+i{
+    vertical-align: middle;
+}
+
+.drop-content{
+    display: none;
+    width: 20%;
+    position: absolute;
+    padding: 0;
+    border-bottom: 2px solid #FEFEFE;
+    background-color: #252839;
+    border-top: #F2B632 solid 2px;
+}
+
+.drop-content a{
+    font-size: 16px;
+    border-bottom: 2px solid #FEFEFE;
+    padding-bottom: 4%;
+    padding-top: 4%;
+    display: block;
+    width: 100%;
+
+    text-decoration: none;
+}
+
+.drop-content a:hover{
+    background-color: #181a27;
+}
+
+.drop-content a:link{
+    color: #FEFEFE;
+}
+
+.drop-content a:visited{
+    color: #FEFEFE;
+}
+
+.drop-content a:active{
+    color: #FEFEFE;
+}
