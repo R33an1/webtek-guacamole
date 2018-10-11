@@ -1,5 +1,6 @@
 body{
     margin: auto;
+    background-color: #FEFEFE;
 }
 
 header{
@@ -71,8 +72,13 @@ i{
     padding-top: 4%;
     display: block;
     width: 100%;
+    vertical-align: middle;
 
     text-decoration: none;
+}
+
+.drop-content a:last-child{
+    border-bottom: 2px solid #F2B632;
 }
 
 .drop-content a:hover{
