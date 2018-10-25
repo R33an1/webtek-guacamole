@@ -24,7 +24,28 @@ p {
     margin: 0;
 }
 
-article {
+.list{
+    font-family: 'Montserrat';
+    list-style-type: circle;
+    padding: 0;
+    width:100%;
+}
+
+.list, .rowlist li{
+    margin-left: 1.5em;
+}
+
+.rowlist{
+    font-family: 'Montserrat';
+    list-style-type: circle;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 23%;
+}
+
+
+article{
     margin: 2%;
     display: block;
 
