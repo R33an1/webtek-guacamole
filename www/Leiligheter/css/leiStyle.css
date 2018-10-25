@@ -6,6 +6,7 @@ body{
 }
 
 h2{
+    height: 1.5em;
     margin: auto;
     font-family: 'Spectral SC';
     display: block;
@@ -13,27 +14,21 @@ h2{
     color: #FEFEFE;
     border-bottom: 2px solid #F2B632;
     font-weight: normal;
-    padding: 1%;
+    padding: 0.5em;
 }
 
 p{
     font-family: 'Montserrat';
     display: block;
-    padding: 1%;
-    padding-top: 1%;
+    padding: 0.5em;
+    padding-top: 0.5em;
     margin: 0;
-    border-bottom: 1px solid #252839;
+
 
 }
 
 article{
     margin: 2%;
-    display: grid;
-    grid-template-columns: 23% 23% 23% 23%;
-    grid-gap: auto;
-    justify-content: space-between;
-    align-content: space-around;
-    row-gap: 5%;
 }
 
 /* HEADER */
@@ -174,7 +169,6 @@ footer div div h4{
 
 #about{
     margin: 0;
-    grid-column: span 4;
 }
 
 #about p{
@@ -251,7 +245,6 @@ footer div div h4{
 
 
 .family{
-    grid-column: span 3;
     display: inline-block;
     width: 100%;
 }
@@ -261,4 +254,45 @@ footer div div h4{
     height: 100%;
     object-fit: cover;
 
+}
+
+/* ===================================*/
+/*  Leiligheter specific              */
+/* ===================================*/
+#kartHeaders{
+    height: 40%;
+}
+#KartInfo,#kartHead{
+    vertical-align: top;
+}
+#KartInfo,#kartHead,#qReference{
+    margin: 2% 0 0 0;
+    display: inline-block;
+}
+#KartInfo{
+    width: 50%;
+}
+#kartHead{
+    width: 25%;
+}
+#qReference{
+    float: right;
+    width: 24%;
+    height: 100%;
+    background-color: #677077;
+}
+#kartInfoTekst{
+    float:left;
+    width: 67%;
+    display:inline-block;
+    padding-bottom: 5%;/* HUsk å justere denne verdien avhengig av størrelsen på teksten i p elementet */
+}
+#kartAPI{
+    width: 33%;
+    display: inline-block;
+    padding-bottom: 5%;
+}
+#overviewKart{
+    width: 75%;
+    border-bottom: 1px solid #252839;
 }
