@@ -1,7 +1,13 @@
 #Bforsidetekst {
-  font-family: 'Spectral SC';
+    font-family: 'Spectral SC';
     color: #FEFEFE;
     text-transform: uppercase;
-    font-weight: normal;
+    font-weight: lighter;
     font-size: 40px;
+}
+
+#Bnærområde {
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }
