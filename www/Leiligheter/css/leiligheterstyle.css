@@ -133,11 +133,33 @@ footer div div h4{
     text-transform: uppercase;
 }
 /* added from form starts here */
-section div{
+#mArticle{
+    display: grid;
+    grid-template: 23% 23% 23% 23%;
+    grid-gap:auto;
+    justify-content: space-between;
+    margin: 0 2% 0 2%;
+}
+section p{
+    display: grid;
+    grid-column: 1 / span 2;
     font-family: 'Montserrat', sans-serif;
+    font color: #252839;
     font-size: 18px;
-    margin-left:2%;
 
+}
+section{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid #252839;
+}
+#kInfo div{
+    width: 47%;
+    padding-top: 5%;
+    display:block;
+    background-color:  #252839;
 
-
+}
+section h3{
+    display: inline;
 }
