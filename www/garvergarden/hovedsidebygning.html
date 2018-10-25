@@ -12,9 +12,11 @@
 
 <body>
 
-      <div>
-        <img src="../img/garvergarden/forside.jpeg" alt="Garvergården" id="cover">         <!--Finn bilde, putt i div?-->
-        <h1>Garvergården<h1>
+      <div id="cover">
+        <img src="../img/garvergarden/forside.jpeg" alt="Garvergården">         <!--Finn bilde, putt i div?-->
+          <div id="Bforsidetekst">
+            <h1>Garvergården<h1>
+          </div>
       </div>
 
   <header></header>
@@ -32,7 +34,7 @@
 
       <div class="cell1">
           <h2>NÆROMRÅDET</h2>
-          <div>
+          <div id="googleMap">
             <!--Google API stuff -->
           </div>
       </div>
@@ -47,10 +49,11 @@
       </div>
 
       <div class="cell1">
-        <div>
           <h2>MER INFO OM</h2>
-        </div>
-        <!--JS buttons vet ikke hvordan funker -->
+          <ul class="merinfo">
+              <a href="#L"><li>LEILIGHETER</li></a>
+              <a href="#N"><li>NÆRINGSLIVSLOKALER</li></a>
+          </ul>
       </div>
     </div>
 
@@ -97,7 +100,8 @@
       </div>
 
       <div class="cell2">
-        <img src="www/img/FINNBILDE" alt="Nærområdet rundt Garvergården" id="narområde">
+        <h2>NÆRT GARVERGÅRDEN</h2>
+        <img src="../img/garvergarden/bildegalleri.jpg" alt="Nærområdet rundt Garvergården" id="Bnærområde">
       </div>
     </div>
     </article>
@@ -105,6 +109,8 @@
     <footer></footer>
 
     <script type="text/javascript" src="../script.js"></script>
+    <script src="../scrips/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAorr_aJ31sg5YCpnjRmu7Pn6LtutiViow&callback=myMap"></script>
 </body>
 
 </html>
