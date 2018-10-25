@@ -25,7 +25,7 @@ p{
 }
 
 article{
-    margin: 2%;
+    margin: 1.5%;
     display: block;
 
 }
@@ -317,7 +317,9 @@ footer div div h4{
 }
 /* Leiligheter ========================================*/
 #praktiskList{
-    column-count: 3;
+    margin-left:5%; 
+    column-count: 4;
+    list-style-position: inside;
 }
 #qReference{
     border-bottom: none;
@@ -325,13 +327,15 @@ footer div div h4{
 #qReference ul li{
     background-color: #F2B632;
     width: 100%;
-    color: black;
+    color: #252839;
     font-size: 15px;
     font-weight:bold;
-    margin: 2% 0 2% 0;
-    padding: 15px 0 15px 0;
+    margin: 2% 0 0 0;
+    padding: 0.5em 0 0.5em 0;
     text-align: center;
     list-style: none;
+    border-bottom: 1px solid #252839;
+    transition: all 0.5s;
 }
 a{
     text-decoration: none;
@@ -339,7 +343,17 @@ a{
 }
 #qReference ul{
     list-style: none;
-    padding-left: 0;
-    margin-left:0;
-    text-align:inherit;
+    padding: 0;
+    margin:auto;
+    text-align:center;
+}
+#qReference ul li:hover{
+    transform: scale(1.1, 1.1);
+}
+#qReference h2{
+    overflow: hidden;
+}
+.container .cell2 img{
+    margin-top: 11%;
+    width: 100%;
 }
