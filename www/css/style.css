@@ -27,7 +27,7 @@ p{
 article{
     margin: 2%;
     display: block;
-    
+
 }
 
 /* CELLS */
@@ -59,7 +59,7 @@ article{
 
 .cell3{
     width: 74%;
-    
+
 }
 
 .cell4{
@@ -74,7 +74,7 @@ header{
     display: block;
     width: 100%;
     font-family: 'Spectral SC', serif;
-    padding: 0;  
+    padding: 0;
     z-index: 10;
 }
 
@@ -201,7 +201,7 @@ footer div div h4{
 /*================*/
 /* INDEX SPECIFIC */
 
-/* COVER PHOTO */ 
+/* COVER PHOTO */
 
 #cover{
     text-align: center;
@@ -314,4 +314,32 @@ footer div div h4{
     width: 100%;
     object-fit: cover;
     display: block;
+}
+/* Leiligheter ========================================*/
+#praktiskList{
+    column-count: 3;
+}
+#qReference{
+    border-bottom: none;
+}
+#qReference ul li{
+    background-color: #F2B632;
+    width: 100%;
+    color: black;
+    font-size: 15px;
+    font-weight:bold;
+    margin: 2% 0 2% 0;
+    padding: 15px 0 15px 0;
+    text-align: center;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#qReference ul{
+    list-style: none;
+    padding-left: 0;
+    margin-left:0;
+    text-align:inherit;
 }
