@@ -26,7 +26,7 @@ p{
 
 .list{
     font-family: 'Montserrat';
-    list-style-type: circle;
+    list-style-type: disc;
     padding: 0;
     width:100%;
 }
@@ -37,7 +37,7 @@ p{
 
 .rowlist{
     font-family: 'Montserrat';
-    list-style-type: circle;
+    list-style-type: disc;
     padding: 0;
     display: inline-block;
     vertical-align: top;

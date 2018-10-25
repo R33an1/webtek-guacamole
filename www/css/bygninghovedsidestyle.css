@@ -1,4 +1,7 @@
-#forsidebilde {
-  width: 100%;
-
+#Bforsidetekst {
+  font-family: 'Spectral SC';
+    color: #FEFEFE;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 40px;
 }
