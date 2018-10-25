@@ -13,7 +13,7 @@
 }
 
 div .merinfo li{
-    font-size: 30px;
+    font-size: 3.8ch;
     position: relative;
     list-style: none;
     width: 100%;
@@ -36,9 +36,4 @@ div .merinfo{
     margin: auto;
     list-style: none;
     text-align: center;
-}
-
-#googleMap{
-  width: 100%;
-  height: 15em;
 }
