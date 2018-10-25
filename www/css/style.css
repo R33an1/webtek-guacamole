@@ -346,3 +346,45 @@ footer div div h4 {
     object-fit: cover;
     display: block;
 }
+/* Leiligheter ========================================*/
+#praktiskList{
+    margin-left:5%;
+    column-count: 4;
+    list-style-position: inside;
+}
+#qReference{
+    border-bottom: none;
+}
+#qReference ul li{
+    background-color: #F2B632;
+    width: 100%;
+    color: #252839;
+    font-size: 15px;
+    font-weight:bold;
+    margin: 2% 0 0 0;
+    padding: 0.5em 0 0.5em 0;
+    text-align: center;
+    list-style: none;
+    border-bottom: 1px solid #252839;
+    transition: all 0.5s;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#qReference ul{
+    list-style: none;
+    padding: 0;
+    margin:auto;
+    text-align:center;
+}
+#qReference ul li:hover{
+    transform: scale(1.1, 1.1);
+}
+#qReference h2{
+    overflow: hidden;
+}
+.container .cell2 img{
+    margin-top: 11%;
+    width: 100%;
+}
