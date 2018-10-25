@@ -60,10 +60,12 @@ article{
 
 header{
     position: sticky;
+    top: 0;
     display: block;
     width: 100%;
     font-family: 'Spectral SC', serif;
     padding: 0;  
+    z-index: 10;
 }
 
 header ul{
@@ -86,13 +88,12 @@ header ul{
 .drop .drop-title{
     width: 100%;
     display: block;
-    font-size: 18px;
+    font-size: 24px;
     margin-top: 6%;
     margin-bottom: 6%;
 }
 
 .drop #home img{
-    
     display: inline-block;
     width: 40%;
     object-fit: contain;
@@ -120,7 +121,7 @@ i{
 }
 
 .drop-content a{
-    font-size: 16px;
+    font-size: 20px;
     padding-bottom: 4%;
     padding-top: 4%;
     display: block;
