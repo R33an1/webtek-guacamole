@@ -22,8 +22,6 @@ p{
     display: block;
     padding: 0.5em;
     margin: 0;
-    border-bottom: 1px solid #252839;
-
 }
 
 ul{
@@ -38,23 +36,27 @@ ul{
 
 article{
     margin: 2%;
-<<<<<<< HEAD
-    display: grid;
-    grid-template-columns: 23% 23% 23% 23%;
-    grid-gap: auto;
-    justify-content: space-between;
-    align-content: space-around;
-    grid-row-gap: 2em;
-=======
     display: block;
-    text-align: justify;
+
 }
 
 /* CELLS */
 
+.container{
+    text-align: justify;
+}
+
+.container:after{
+    content: ' ';
+    width: 100%;
+    display: inline-block;
+}
+
 .cell1, .cell2, .cell3, .cell4{
     display: inline-block;
     margin-bottom: 2em;
+    border-bottom: 1px solid #252839;
+    vertical-align: top;
 }
 
 .cell1{
@@ -67,12 +69,11 @@ article{
 
 .cell3{
     width: 74%;
-    
+
 }
 
 .cell4{
     width: 100%;
->>>>>>> master
 }
 
 /* HEADER */
@@ -83,12 +84,8 @@ header{
     display: block;
     width: 100%;
     font-family: 'Spectral SC', serif;
-<<<<<<< HEAD
     padding: 0;
-=======
-    padding: 0;  
     z-index: 10;
->>>>>>> master
 }
 
 header ul{
@@ -117,10 +114,6 @@ header ul{
 }
 
 .drop #home img{
-<<<<<<< HEAD
-
-=======
->>>>>>> master
     display: inline-block;
     width: 40%;
     object-fit: contain;
@@ -218,7 +211,7 @@ footer div div h4{
 /*================*/
 /* INDEX SPECIFIC */
 
-/* COVER PHOTO */ 
+/* COVER PHOTO */
 
 #cover{
     text-align: center;
@@ -270,16 +263,9 @@ footer div div h4{
 .card{
     display: inline-block;
     transition: all 0.5s;
-    width: 100%;
+    border-bottom: none;
 }
 
-<<<<<<< HEAD
-.card+.card{
-
-}
-
-=======
->>>>>>> master
 .card:hover{
     transform: scale(1.1, 1.1);
 }
@@ -334,17 +320,8 @@ footer div div h4{
 
 /* FAMILY */
 
-#family{
-    float: right;
-    
-}
-
 #family img{
     width: 100%;
     object-fit: cover;
-<<<<<<< HEAD
-
-=======
     display: block;
->>>>>>> master
 }
