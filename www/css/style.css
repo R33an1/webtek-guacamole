@@ -11,7 +11,7 @@ h2{
     display: block;
     background-color: #252839;
     color: #FEFEFE;
-    border-bottom: 2px solid #F2B632;
+    border-bottom: 4px solid #F2B632;
     font-weight: normal;
     padding: 0.5em;
     height: 1.5em;
@@ -84,7 +84,7 @@ header ul{
     font-size: 0;
     background-color: #252839;
     color: #FEFEFE;
-    border-bottom: #F2B632 solid 2px;
+    border-bottom: #F2B632 solid 4px;
     padding: 0;
 }
 
@@ -99,8 +99,8 @@ header ul{
     width: 100%;
     display: block;
     font-size: 24px;
-    margin-top: 6%;
-    margin-bottom: 6%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .drop #home img{
@@ -127,13 +127,13 @@ i{
     position: absolute;
     padding: 0;
     background-color: #252839;
-    border-top: #F2B632 solid 2px;
+    border-top: #F2B632 solid 4px;
 }
 
 .drop-content a{
     font-size: 20px;
-    padding-bottom: 4%;
-    padding-top: 4%;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
     display: block;
     width: 100%;
     text-decoration: none;
@@ -141,7 +141,7 @@ i{
 }
 
 .drop-content a:last-child{
-    border-bottom: 2px solid #F2B632;
+    border-bottom: 4px solid #F2B632;
 }
 
 .drop-content a:hover{
@@ -274,7 +274,7 @@ footer div div h4{
     display: block;
     background-color: #252839;
     color: #FEFEFE;
-    border-bottom: 2px solid #F2B632;
+    border-bottom: 4px solid #F2B632;
     font-weight: normal;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
