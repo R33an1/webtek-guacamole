@@ -4,6 +4,9 @@ body{
     margin: 0;
     background-color: #FEFEFE;
 }
+a:visited{
+    color: inherit;
+}
 
 h2{
     margin: auto;
