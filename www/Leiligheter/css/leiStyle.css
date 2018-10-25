@@ -296,3 +296,15 @@ footer div div h4{
     width: 75%;
     border-bottom: 1px solid #252839;
 }
+.rowlist li {
+    margin-left: 1.5em;
+}
+
+.rowlist {
+    font-family: 'Montserrat';
+    list-style-type: disc;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 23%;
+}
