@@ -1,0 +1,24 @@
+div .Navigation li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    padding: 0.5em 0 0.5em 0;
+    margin-top: 2%;
+    display: inline-block;
+    text-align: center;
+    color: #252839;
+    background-color:  #F2B632;
+    border-bottom: 1px solid #252839;
+    transition: all 0.5s;
+
+}
+div .Navigation li:hover{
+    transform: scale(1.1, 1.1);
+}
+div .Navigation{
+    position: relative;
+    padding: 0;
+    margin: auto;
+    list-style: none;
+    text-align: center;
+}
