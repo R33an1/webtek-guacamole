@@ -24,18 +24,19 @@ p {
     margin: 0;
 }
 
-.list{
+.list {
     font-family: 'Montserrat';
     list-style-type: circle;
     padding: 0;
-    width:100%;
+    width: 100%;
 }
 
-.list, .rowlist li{
+.list,
+.rowlist li {
     margin-left: 1.5em;
 }
 
-.rowlist{
+.rowlist {
     font-family: 'Montserrat';
     list-style-type: circle;
     padding: 0;
@@ -45,7 +46,7 @@ p {
 }
 
 
-article{
+article {
     margin: 2%;
     display: block;
 
@@ -123,8 +124,8 @@ header ul {
     width: 100%;
     display: block;
     font-size: 24px;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .drop #home img {
@@ -342,4 +343,3 @@ footer div div h4 {
     object-fit: cover;
     display: block;
 }
-
