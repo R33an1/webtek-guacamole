@@ -24,10 +24,31 @@ p{
     margin: 0;
 }
 
+.list{
+    font-family: 'Montserrat';
+    list-style-type: circle;
+    padding: 0;
+    width:100%;
+}
+
+.list, .rowlist li{
+    margin-left: 1.5em;
+}
+
+.rowlist{
+    font-family: 'Montserrat';
+    list-style-type: circle;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 23%;
+}
+
+
 article{
     margin: 2%;
     display: block;
-    
+
 }
 
 /* CELLS */
@@ -59,7 +80,7 @@ article{
 
 .cell3{
     width: 74%;
-    
+
 }
 
 .cell4{
@@ -74,7 +95,7 @@ header{
     display: block;
     width: 100%;
     font-family: 'Spectral SC', serif;
-    padding: 0;  
+    padding: 0;
     z-index: 10;
 }
 
@@ -201,7 +222,7 @@ footer div div h4{
 /*================*/
 /* INDEX SPECIFIC */
 
-/* COVER PHOTO */ 
+/* COVER PHOTO */
 
 #cover{
     text-align: center;
