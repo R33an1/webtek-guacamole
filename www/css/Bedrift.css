@@ -1,0 +1,16 @@
+div .Navigation li{
+    position: relative;
+    list-style: none;
+    width: 48%;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #F2B632;
+    text-align: left;
+}
+div .Navigation{
+    position: relative;
+    padding: 0;
+    margin: auto;
+    list-style: none;
+    text-align: center;
+}
