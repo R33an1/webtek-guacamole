@@ -170,7 +170,7 @@ p {
 
 
 article {
-    margin: 1.5%;
+    margin: 5% 1.5% 1.5% 1.5%;
     display: block;
 }
 
@@ -529,6 +529,26 @@ a{
         filter: blur(5px);
     }
 }
+/*Font size buttons*/
+.fontSize{
+    width: auto;
+    float: right;
+    display: block;
+    position: sticky;
+    top: 14vh;
+    text-align: center;
+    width: 2%;
+    z-index: 2;
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 1% 1.5% 1% 1.5%;
+    background-color:  #252839;
+    border-bottom: 4px solid #F2B632;
+    box-shadow: 0 0 5px #252839;
+    transition: all 0.5s;
+    color: white
+}
+.fontSize:hover{
+    transform: scale(1.1, 1.1);
 
 @keyframes Logo {
     from {

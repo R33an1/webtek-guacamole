@@ -133,6 +133,28 @@ if(document.querySelector("footer")){
     +   "</div>");
 }
 
+const fontSizeList1 = ["1em", "1.125em", "1.25em", "1.375em","1.5em"]
+const fontSizeList2 = ["1.5em", "1.6875em", "1.875em", "2.0625em","2.25em"]
+var i = 0
+
+const fSLP= document.querySelectorAll("p");
+const fSLC= document.querySelectorAll(".container h2")
+
+
+function fontSizeReciver(){
+    if (i < fontSizeList1.length-1){
+        i+=1
+    }
+    else {
+        i = 0
+    }
+    for (var n = 0; n < fSLP.length; n++) {
+        fSLP[n].style.fontSize = fontSizeList1[i];
+    }
+    for (var v = 0; v < fSLC.length; v++) {
+        fSLC[v].style.fontSize = fontSizeList2[i];
+        }
+}
 //Mobile navbar
 
 const navButton = document.querySelector("#navMobile>div");
