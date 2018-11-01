@@ -173,7 +173,7 @@ p {
     font-family: 'Montserrat';
     list-style-type: disc;
     padding: 0;
-    width: 100%;
+    width: auto;
 }
 
 .list,
@@ -362,7 +362,7 @@ footer div div:last-child {
     padding-bottom: 4%;
     margin-left: 2%;
     width: auto;
-    
+
 }
 
 footer div div h4 {
