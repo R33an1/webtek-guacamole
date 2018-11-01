@@ -12,23 +12,24 @@
 
 <body>
 
-      <div id="cover">
-        <img src="../img/garvergarden/forside.jpeg" alt="Garvergården"> <!--Finn bilde, putt i div?-->
-          <div id="Bforsidetekst">
-            <h1>Garvergården<h1>
-          </div>
-      </div>
+    <div id="cover">
+        <img src="../img/garvergarden/forside.jpeg" alt="Garvergården">
+        <div id="Bforsidetekst">
+          <h1>Garvergården<h1>
+        </div>
+    </div>
 
-  <header></header>
+
+    <header id="navDesktop"></header>
+
+    <header id="navMobile"></header>
 
     <article>
     <div class="container">
       <div class="cell1">
           <h2>PLASSERING</h2>
           <ul class="list">
-            <li>punkt</li>
-            <li>punkt</li>
-            <li>punkt</li>
+            <li>Storgata 7B <br> 2408 Elverum</li>
           </ul>
       </div>
 
@@ -42,9 +43,9 @@
       <div class="cell1">
           <h2>TRIVIA</h2>
           <ul class="list">
-            <li>punkt</li>
-            <li>punkt</li>
-            <li>punkt</li>
+            <li>Store Næringslivslokaler</li>
+            <li>Gåavstand til Dagligvarebutikk</li>
+            <li>Midt i Storgata</li>
           </ul>
       </div>
 
@@ -61,47 +62,83 @@
       <div class="cell4">
           <h2>FASILITETER</h2>
         <p>
-          masse spennende skrift om fasilitetene
         </p>
           <div class="container">
             <ul class="rowlist">
-              <li>punkt</li>
-              <li>punkt</li>
-              <li>punkt</li>
+              <li>Rullestoltilgjengelig</li>
+              <li>God kundeparkering</li>
+              <li>Lett tilgjengelig varelevering</li>
             </ul>
 
             <ul class="rowlist">
-              <li>punkt</li>
-              <li>punkt</li>
-              <li>punkt</li>
+              <li>Forretningslokaler bestående av</li>
+              <ul>
+                  <li>Kiropraktorehuset</li>
+                  <li> Elverum Fotklinikk</li>
+                  <li>Hartz Dental AS</li>
+              </ul>
             </ul>
 
             <ul class="rowlist">
-              <li>punkt</li>
-              <li>punkt</li>
-              <li>punkt</li>
+              <li>Bod til lagring i kjeller</li>
+              <li>Søppeltømming inkludert</li>
+              <li>Snørydding inkludert</li>
             </ul>
 
             <ul class="rowlist">
-              <li>punkt</li>
-              <li>punkt</li>
-              <li>punkt</li>
+              <li>Mulighet for ansattparkering</li>
+              <li>Mulighet for <br>selvvalgt strømleverandør</li>
             </ul>
           </div>
       </div>
     </div>
 
     <div class="container">
-      <div class="cell2">
+      <div class="cell2" id="galleri">
           <h2>NÆROMRÅDET</h2>
         <p>
-          The lazy fox jumped over the brown dog, The lazy fox jumped over the brown dog, The lazy fox jumped over the brown dog, The lazy fox jumped over the brown dog, The lazy fox jumped over the brown dog.
+        
         </p>
       </div>
 
       <div class="cell2">
-        <h2>NÆRT GARVERGÅRDEN</h2>
-        <img src="../img/garvergarden/bildegalleri.jpg" alt="Nærområdet rundt Garvergården" id="Bnærområde">
+
+
+        <div class="mySlides">
+          <div class="demo"></div>
+            <img src="../img/garvergarden/B1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="demo"></div>
+            <img src="../img/garvergarden/B2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="demo"></div>
+            <img src="../img/garvergarden/B3.jpg" style="width:100%">
+        </div>
+
+        <a class="forrige" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="neste" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+            <p id="caption"><p>
+          </div>
+
+        <!-- Endre til lavere resolution? -->
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="../img/garvergarden/B1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="../img/garvergarden/B2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="../img/garvergarden/B3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+          </div>
+        </div>
+
       </div>
     </div>
     </article>
