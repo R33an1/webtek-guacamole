@@ -67,11 +67,12 @@ if(document.querySelector("footer")){
 }
 
 const fontSizeList1 = ["1em", "1.125em", "1.25em", "1.375em","1.5em"]
-const fontSizeList2 = ["1.3em", "1.425em", "1.55em", "1.675em","1.8em"]
+const fontSizeList2 = ["1.5em", "1.6875em", "1.875em", "2.0625em","2.25em"]
 var i = 0
 
 const fSLP= document.querySelectorAll("p");
-const fSLC= document.querySelectorAll(".container h3")
+const fSLC= document.querySelectorAll(".container h2")
+
 
 function fontSizeReciver(){
     if (i < fontSizeList1.length-1){
@@ -83,7 +84,7 @@ function fontSizeReciver(){
     for (var n = 0; n < fSLP.length; n++) {
         fSLP[n].style.fontSize = fontSizeList1[i];
     }
-    for (var v = 0; v < fSLC.lengt; v++) {
-        fSLC[n].style.fontSize = fontSizeList2[i];
+    for (var v = 0; v < fSLC.length; v++) {
+        fSLC[v].style.fontSize = fontSizeList2[i];
         }
 }
