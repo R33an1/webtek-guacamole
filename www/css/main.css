@@ -126,9 +126,9 @@ header ul {
 .drop .drop-title {
     width: 100%;
     display: block;
-    font-size: 24px;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    font-size: 28px;
+    margin-top: 2.4vh;
+    margin-bottom: 2.4vh;
 }
 
 .drop #home img {
@@ -197,9 +197,6 @@ footer {
     width: 100%;
     color: #FEFEFE;
     margin-top: 5%;
-
-    /* Remove this when index is created */
-
 }
 
 footer div {
@@ -211,7 +208,6 @@ footer div {
 footer div div {
     width: 100%;
 }
-
 
 footer div div:first-child {
     border-bottom: #F2B632 2px solid;
