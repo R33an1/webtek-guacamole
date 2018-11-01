@@ -15,6 +15,29 @@
     .fontSize{
         display: none !important;
     }
+
+    .card{
+        transition: none !important;
+    }
+
+    h2{
+        font-size: 2.5em !important;
+    }
+
+    footer{
+        width: 100% !important;
+    }
+
+    footer>div{
+        font-size: 2em;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    footer>div>div{
+        width: 100% !important;
+        
+    }
 }
 
 
@@ -323,27 +346,33 @@ footer {
     margin-top: 5%;
 }
 
-footer div {
+footer>div {
     width: 25%;
-    margin-left: 2%;
     display: inline-block;
+    margin-left: 1.5em;
 }
 
 footer div div {
     width: 100%;
+    display: block;
 }
 
 footer div div:first-child {
     border-bottom: #F2B632 2px solid;
+    width: auto;
 }
 
 footer div div:last-child {
     padding-top: 4%;
     padding-bottom: 4%;
+    margin-left: 2%;
+    width: 100%;
 }
 
 footer div div h4 {
     text-transform: uppercase;
+    width: auto%;
+    margin-left: 2%;
 }
 
 /*================*/
