@@ -50,7 +50,7 @@ p {
 
 
 article {
-    margin: 3% 1.5% 1.5% 1.5%;
+    margin: 5% 1.5% 1.5% 1.5%;
     display: block;
 
 }
@@ -396,19 +396,16 @@ a{
     display: block;
     position: sticky;
     top: 14vh;
-    z-index: 2;
-    }
-.fontSize div{
     text-align: center;
     width: 2%;
-
+    z-index: 2;
     padding: 0.5em 1em 0.5em 1em;
     margin: 1% 1.5% 1% 1.5%;
-    color: #252839;
-    background-color:  #F2B632;
-    border-bottom: 1px solid #252839;
-    box-shadow: 0 0 5px 0 #252839;
+    background-color:  #252839;
+    border-bottom: 4px solid #F2B632;
+    box-shadow: 0 0 5px #252839;
     transition: all 0.5s;
+    color: white
 }
-.fontSize div:hover{
+.fontSize:hover{
     transform: scale(1.1, 1.1);
