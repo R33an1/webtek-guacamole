@@ -1,3 +1,123 @@
+@media screen and (max-device-width: 768px){
+    /* For mobile phones: */
+    [class*="cell"] {
+        width: 100% !important;
+    }
+
+    #navDesktop{
+        display: none !important;
+    }
+
+    #navMobile{
+        display: block !important;
+    }
+}
+
+
+#navMobile{
+    width: 100%;
+    display: none;
+    height: 10em;
+    background-color: #252839;
+    border-bottom: 4px solid #F2B632;
+    top: 0; 
+    position: sticky;
+    z-index: 5;
+    
+}
+
+#navMobile>div{
+    width: auto;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#navMobile>div>i{
+    vertical-align: middle;
+    color: white;
+    font-size: 10em;
+}
+
+#navMobile>a>img{
+    object-fit: contain;
+    vertical-align: middle;
+    display: inline-block;
+    height: 100%;
+    float: right;
+}
+
+#navMobile>.content{
+    position: absolute;
+    left: 0;
+    top: 10em;
+    background-color: #252839;
+    color: white;
+    display: none;
+    width: 100%;
+    padding: 0;
+    border-bottom: 4px solid #F2B632;
+    border-top: 4px solid #F2B632;
+
+    height: auto;
+    box-shadow: 0px 0px 5px black;
+}
+
+#navMobile>.content>div{
+    width: 100%;
+    text-transform: uppercase;
+}
+
+#navMobile>.content>div+div{
+    border-top: 2px solid #FEFEFE;
+}
+
+#navMobile>.content>div>h3{
+    font-family: 'Spectral SC';
+    font-size: 4em;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0.5em;
+}
+
+#navMobile>.content>div>h3>i{
+    font-size: inherit;
+}
+
+#navMobile>.content>div>ul{
+    border-top: 2px solid #FEFEFE;
+
+    display: none;
+    list-style: none;
+    width: 100%;;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #181a27;
+}
+
+#navMobile>.content>div>ul>li{
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-size: 3em;
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-decoration: underline;
+    margin: auto;
+}
+
+#navMobile>.content>div>ul>li+li{
+    border-top: 2px solid #252839;
+}
+
+#navMobile>.content>div>ul>li:visited{
+    color: white;
+}
+
 /* GENERAL */
 
 body {
@@ -17,7 +137,6 @@ h2 {
     border-bottom: 4px solid #F2B632;
     font-weight: normal;
     padding: 0.5em;
-    height: 1.5em;
 }
 
 p {
@@ -52,13 +171,13 @@ p {
 article {
     margin: 1.5%;
     display: block;
-
 }
 
 /* CELLS */
 
 .container {
     text-align: justify;
+    display: block;
 }
 
 .container:after {
@@ -96,7 +215,7 @@ article {
 
 /* HEADER */
 
-header {
+#navDesktop {
     position: sticky;
     top: 0;
     display: block;
@@ -106,7 +225,7 @@ header {
     z-index: 10;
 }
 
-header ul {
+#navDesktop ul {
     margin: auto;
     width: inherit;
     font-size: 0;
@@ -391,6 +510,7 @@ a{
 .container .cell2 img{
     margin-top: 11%;
     width: 100%;
+
 }
 
 /*=============== */

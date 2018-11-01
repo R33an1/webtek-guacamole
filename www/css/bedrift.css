@@ -25,7 +25,8 @@ div .navigation{
 #navigasjon{
     border-bottom: 0px;
 }
-h3 {
+
+#navigasjon>h3 {
     margin: auto;
     font-family: 'Spectral SC';
     display: block;
