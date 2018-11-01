@@ -50,7 +50,7 @@ p {
 
 
 article {
-    margin: 0 1.5% 1.5% 1.5%;
+    margin: 3% 1.5% 1.5% 1.5%;
     display: block;
 
 }
@@ -59,6 +59,7 @@ article {
 
 .container {
     text-align: justify;
+    display: block;
 }
 
 .container:after {
@@ -390,8 +391,9 @@ a{
 }
 /*Font size buttons*/
 .fontSize{
-    width: 100%;
-    display: inline-block;
+    width: auto;
+    float: right;
+    display: block;
     position: sticky;
     top: 14vh;
     z-index: 2;
@@ -399,7 +401,7 @@ a{
 .fontSize div{
     text-align: center;
     width: 2%;
-    float: right;
+
     padding: 0.5em 1em 0.5em 1em;
     margin: 1% 1.5% 1% 1.5%;
     color: #252839;
