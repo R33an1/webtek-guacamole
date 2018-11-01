@@ -50,7 +50,7 @@ p {
 
 
 article {
-    margin: 1.5%;
+    margin: 0 1.5% 1.5% 1.5%;
     display: block;
 
 }
@@ -388,3 +388,25 @@ a{
     margin-top: 11%;
     width: 100%;
 }
+/*Font size buttons*/
+.fontSize{
+    width: 100%;
+    display: inline-block;
+    position: sticky;
+    top: 14vh;
+    z-index: 2;
+    }
+.fontSize div{
+    text-align: center;
+    width: 2%;
+    float: right;
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 1% 1.5% 1% 1.5%;
+    color: #252839;
+    background-color:  #F2B632;
+    border-bottom: 1px solid #252839;
+    box-shadow: 0 0 5px 0 #252839;
+    transition: all 0.5s;
+}
+.fontSize div:hover{
+    transform: scale(1.1, 1.1);
