@@ -33,11 +33,6 @@
         width: 100% !important;
         margin: 0 !important;
     }
-
-    footer>div>div{
-        width: 100% !important;
-        
-    }
 }
 
 
@@ -365,8 +360,9 @@ footer div div:first-child {
 footer div div:last-child {
     padding-top: 4%;
     padding-bottom: 4%;
-    margin-left: 2%;
-    width: 100%;
+    width: auto;
+    display: block;
+    padding-left: 2%;
 }
 
 footer div div h4 {
