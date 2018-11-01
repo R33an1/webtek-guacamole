@@ -92,7 +92,7 @@
     </div>
 
     <div class="container">
-      <div class="cell2">
+      <div class="cell2" id="galleri">
           <h2>NÆROMRÅDET</h2>
         <p>
           The lazy fox jumped over the brown dog, The lazy fox jumped over the brown dog, The lazy fox jumped over the brown dog, The lazy fox jumped over the brown dog, The lazy fox jumped over the brown dog.
@@ -100,8 +100,43 @@
       </div>
 
       <div class="cell2">
-        <h2>NÆRT GARVERGÅRDEN</h2>
-        <img src="../img/garvergarden/bildegalleri.jpg" alt="Nærområdet rundt Garvergården" id="Bnærområde">
+        
+
+        <div class="mySlides">
+          <div class="demo"></div>
+            <img src="../img/Garvergarden/B1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="demo"></div>
+            <img src="../img/Garvergarden/B2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="demo"></div>
+            <img src="../img/Garvergarden/B3.jpg" style="width:100%">
+        </div>
+
+        <a class="forrige" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="neste" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+            <p id="caption"><p>
+          </div>
+
+        <!-- Endre til lavere resolution? -->
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="../img/Garvergarden/B1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="../img/Garvergarden/B2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="../img/Garvergarden/B3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+          </div>
+        </div>
+
       </div>
     </div>
     </article>

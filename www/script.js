@@ -19,7 +19,7 @@ if(document.querySelector("header")){
     +                   "<a href=\"#\">Leiligheter</a>"
     +                   "<a href=\"#\">Næringsliv</a>"
     +               "</div>"
-    +           "</li>"         
+    +           "</li>"
     +           "<li class=\"drop\">"
     +               "<a id=\"home\" href=\"../index.html\"><img src=\"../img/logo.png\"></a>"
     +           "</li>"
@@ -30,7 +30,7 @@ if(document.querySelector("header")){
     +                   "<a href=\"#\">Leiligheter</a>"
     +                   "<a href=\"#\">Næringsliv</a>"
     +               "</div>"
-    +           "</li>"            
+    +           "</li>"
     +           "<li class=\"drop\">"
     +               "<div class=\"drop-title\">Gimle <i class=\"material-icons\">arrow_drop_down</i></div>"
     +               "<div class=\"drop-content\">"
@@ -38,7 +38,7 @@ if(document.querySelector("header")){
     +                   "<a href=\"#\">Leiligheter</a>"
     +                   "<a href=\"#\">Næringsliv</a>"
     +               "</div>"
-    +           "</li>"          
+    +           "</li>"
     +       "</ul>"
     +   "</header>");
 }
@@ -52,7 +52,7 @@ if(document.querySelector("footer")){
     +       "</div>"
     +       "<div>"
     +           "Telefon: <br>"
-    +           "E-Post:" 
+    +           "E-Post:"
     +       "</div>"
     +   "</div>"
     +   "<div>"
@@ -64,4 +64,34 @@ if(document.querySelector("footer")){
     +           "Adresse:"
     +       "</div>"
     +   "</div>");
+}
+
+// bildegalleri
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex+2].alt;
 }
