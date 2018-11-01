@@ -19,7 +19,7 @@ if(document.querySelector("header")){
     +                   "<a href=\"#\">Leiligheter</a>"
     +                   "<a href=\"#\">Næringsliv</a>"
     +               "</div>"
-    +           "</li>"         
+    +           "</li>"
     +           "<li class=\"drop\">"
     +               "<a id=\"home\" href=\"../index.html\"><img src=\"../img/logo.png\"></a>"
     +           "</li>"
@@ -30,7 +30,7 @@ if(document.querySelector("header")){
     +                   "<a href=\"#\">Leiligheter</a>"
     +                   "<a href=\"#\">Næringsliv</a>"
     +               "</div>"
-    +           "</li>"            
+    +           "</li>"
     +           "<li class=\"drop\">"
     +               "<div class=\"drop-title\">Gimle <i class=\"material-icons\">arrow_drop_down</i></div>"
     +               "<div class=\"drop-content\">"
@@ -38,7 +38,7 @@ if(document.querySelector("header")){
     +                   "<a href=\"#\">Leiligheter</a>"
     +                   "<a href=\"#\">Næringsliv</a>"
     +               "</div>"
-    +           "</li>"          
+    +           "</li>"
     +       "</ul>"
     +   "</header>");
 }
@@ -52,7 +52,7 @@ if(document.querySelector("footer")){
     +       "</div>"
     +       "<div>"
     +           "Telefon: <br>"
-    +           "E-Post:" 
+    +           "E-Post:"
     +       "</div>"
     +   "</div>"
     +   "<div>"
@@ -64,4 +64,26 @@ if(document.querySelector("footer")){
     +           "Adresse:"
     +       "</div>"
     +   "</div>");
+}
+
+const fontSizeList1 = ["1em", "1.125em", "1.25em", "1.375em","1.5em"]
+const fontSizeList2 = ["1.3em", "1.425em", "1.55em", "1.675em","1.8em"]
+var i = 0
+
+const fSLP= document.querySelectorAll("p");
+const fSLC= document.querySelectorAll(".container h3")
+
+function fontSizeReciver(){
+    if (i < fontSizeList1.length-1){
+        i+=1
+    }
+    else {
+        i = 0
+    }
+    for (var n = 0; n < fSLP.length; n++) {
+        fSLP[n].style.fontSize = fontSizeList1[i];
+    }
+    for (var v = 0; v < fSLC.lengt; v++) {
+        fSLC[n].style.fontSize = fontSizeList2[i];
+        }
 }
