@@ -11,6 +11,10 @@
     #navMobile{
         display: block !important;
     }
+
+    .fontSize{
+        display: none !important;
+    }
 }
 
 
@@ -549,6 +553,8 @@ a{
 }
 .fontSize:hover{
     transform: scale(1.1, 1.1);
+
+}
 
 @keyframes Logo {
     from {
