@@ -21,7 +21,7 @@ if(document.querySelector("header")){
     +               "</div>"
     +           "</li>"         
     +           "<li class=\"drop\">"
-    +               "<a id=\"home\" href=\"#\"><img src=\"../img/logo.png\"></a>"
+    +               "<a id=\"home\" href=\"../index.html\"><img src=\"../img/logo.png\"></a>"
     +           "</li>"
     +           "<li class=\"drop\">"
     +               "<div class=\"drop-title\">Parkgården <i class=\"material-icons\">arrow_drop_down</i></div>"
