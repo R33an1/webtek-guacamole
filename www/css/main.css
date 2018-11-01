@@ -33,11 +33,6 @@
         width: 100% !important;
         margin: 0 !important;
     }
-
-    footer>div>div{
-        width: 100% !important;
-        
-    }
 }
 
 
@@ -366,12 +361,13 @@ footer div div:last-child {
     padding-top: 4%;
     padding-bottom: 4%;
     margin-left: 2%;
-    width: 100%;
+    width: auto;
+    
 }
 
 footer div div h4 {
     text-transform: uppercase;
-    width: auto%;
+    width: auto;
     margin-left: 2%;
 }
 
