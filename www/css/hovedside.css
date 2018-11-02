@@ -84,6 +84,7 @@ li {
 .mySlides img {
   margin: 0% !important;
   max-height: 26vw;
+  object-fit: cover;
 }
 
 /* Container for image text */
@@ -100,6 +101,7 @@ li {
   margin: 0% !important;
   padding: 0% !important;
   max-height: 3.5vw;
+  object-fit: cover;
 }
 
 .active,
