@@ -11,6 +11,28 @@
     #navMobile{
         display: block !important;
     }
+
+    .fontSize{
+        display: none !important;
+    }
+
+    .card{
+        transition: none !important;
+    }
+
+    h2{
+        font-size: 2.5em !important;
+    }
+
+    footer{
+        width: 100% !important;
+    }
+
+    footer>div{
+        font-size: 2em;
+        width: 100% !important;
+        margin: 0 !important;
+    }
 }
 
 
@@ -137,6 +159,7 @@ h2 {
     border-bottom: 4px solid #F2B632;
     font-weight: normal;
     padding: 0.5em;
+    z-index: 2;
 }
 
 p {
@@ -150,7 +173,7 @@ p {
     font-family: 'Montserrat';
     list-style-type: disc;
     padding: 0;
-    width: 100%;
+    width: auto;
 }
 
 .list,
@@ -169,7 +192,7 @@ p {
 
 
 article {
-    margin: 1.5%;
+    margin: 5% 1.5% 1.5% 1.5%;
     display: block;
 }
 
@@ -318,27 +341,34 @@ footer {
     margin-top: 5%;
 }
 
-footer div {
+footer>div {
     width: 25%;
-    margin-left: 2%;
     display: inline-block;
+    margin-left: 1.5em;
 }
 
 footer div div {
     width: 100%;
+    display: block;
 }
 
 footer div div:first-child {
     border-bottom: #F2B632 2px solid;
+    width: auto;
 }
 
 footer div div:last-child {
     padding-top: 4%;
     padding-bottom: 4%;
+    margin-left: 2%;
+    width: auto;
+
 }
 
 footer div div h4 {
     text-transform: uppercase;
+    width: auto;
+    margin-left: 2%;
 }
 
 /*================*/
@@ -527,6 +557,28 @@ a{
         opacity: 0.7;
         filter: blur(5px);
     }
+}
+/*Font size buttons*/
+.fontSize{
+    width: auto;
+    float: right;
+    display: block;
+    position: sticky;
+    top: 14vh;
+    text-align: center;
+    width: 2%;
+    z-index: 2;
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 1% 1.5% 1% 1.5%;
+    background-color:  #252839;
+    border-bottom: 4px solid #F2B632;
+    box-shadow: 0 0 5px #252839;
+    transition: all 0.5s;
+    color: white
+}
+.fontSize:hover{
+    transform: scale(1.1, 1.1);
+
 }
 
 @keyframes Logo {
