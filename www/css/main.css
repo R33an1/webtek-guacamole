@@ -174,20 +174,14 @@ p {
     list-style-type: disc;
     padding: 0;
     width: auto;
-}
-
-.list,
-.rowlist li {
-    margin-left: 1.5em;
-    text-align: left;
-}
-
-.rowlist {
-    font-family: 'Montserrat';
-    list-style-type: disc;
-    padding: 0;
     display: inline-block;
     vertical-align: top;
+    margin-left: 1.5em;
+    text-align: left;
+    color: #252839;
+}
+
+.container>ul {
     width: 23%;
 }
 
@@ -456,21 +450,6 @@ footer div div h4 {
     width: 100%;
     height: 240px;
     display: block;
-}
-
-.card .title {
-    text-transform: uppercase;
-    font-family: 'Spectral SC';
-    width: auto;
-    display: block;
-    background-color: #252839;
-    color: #FEFEFE;
-    border-bottom: 4px solid #F2B632;
-    font-weight: normal;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 0.5em;
-    font-size: 1.4em;
 }
 
 .card .options {
