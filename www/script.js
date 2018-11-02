@@ -133,6 +133,7 @@ if (document.querySelector("footer")) {
         "</div>");
 }
 
+//Font size changer
 const fontSizeList1 = ["1em", "1.125em", "1.25em", "1.375em", "1.5em"]
 const fontSizeList2 = ["1.5em", "1.6875em", "1.875em", "2.0625em", "2.25em"]
 var i = 0

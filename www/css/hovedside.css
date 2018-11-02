@@ -106,10 +106,3 @@ li {
 .demo:hover {
   opacity: 1;
 }
-
-#caption {
-  background-color: #252839;
-  color: #FEFEFE;
-  margin-top: -4px;
-  margin-bottom: -16px;
-}
