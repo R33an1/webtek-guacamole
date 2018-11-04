@@ -174,19 +174,14 @@ p {
     list-style-type: disc;
     padding: 0;
     width: auto;
-}
-
-.list,
-.rowlist li {
-    margin-left: 1.5em;
-}
-
-.rowlist {
-    font-family: 'Montserrat';
-    list-style-type: disc;
-    padding: 0;
     display: inline-block;
     vertical-align: top;
+    margin-left: 1.5em;
+    text-align: left;
+    color: #252839;
+}
+
+.container>ul {
     width: 23%;
 }
 
@@ -200,6 +195,12 @@ article {
 
 .container {
     text-align: justify;
+    display: block;
+}
+
+.container img{
+    width: 100%;
+    object-fit: cover;
     display: block;
 }
 
@@ -451,21 +452,6 @@ footer div div h4 {
     display: block;
 }
 
-.card .title {
-    text-transform: uppercase;
-    font-family: 'Spectral SC';
-    width: auto;
-    display: block;
-    background-color: #252839;
-    color: #FEFEFE;
-    border-bottom: 4px solid #F2B632;
-    font-weight: normal;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 0.5em;
-    font-size: 1.4em;
-}
-
 .card .options {
     font-family: 'Montserrat';
     font-size: 1.2em;
@@ -492,55 +478,61 @@ footer div div h4 {
     text-decoration: none;
 }
 
-/* FAMILY */
+/* Buttons */
 
-#family img {
-    width: 100%;
-    object-fit: cover;
-    display: block;
+.buttons{
+    border-bottom: none;
 }
+
+.buttons h2{
+    text-align: center;
+}
+
+.buttons>ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.buttons>ul>a{
+    text-decoration: none;
+    color: #252839;
+}
+
+.buttons>ul>a:visited{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.buttons>ul>a>li{
+    text-align: center;
+    background-color: #F2B632;
+    border-bottom: 4px solid #252839;
+    vertical-align: middle;
+    font-size: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-family: 'Spectral SC';
+    margin-top: 1%;
+
+    transition: all 0.2s;
+}
+
+.buttons>ul>a>li:hover{
+    background-color: #252839;
+    border-bottom: 4px solid #F2B632;
+    color: #FEFEFE;
+}
+
+.buttons>ul>a>li:active{
+    text-decoration: underline;
+}
+
 /* Leiligheter ========================================*/
 #praktiskList{
     margin-left:5%;
     column-count: 4;
     list-style-position: inside;
-}
-#qReference{
-    border-bottom: none;
-}
-#qReference ul li{
-    background-color: #F2B632;
-    width: 100%;
-    color: #252839;
-    font-size: 15px;
-    font-weight:bold;
-    margin: 2% 0 0 0;
-    padding: 0.5em 0 0.5em 0;
-    text-align: center;
-    list-style: none;
-    border-bottom: 1px solid #252839;
-    transition: all 0.5s;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-#qReference ul{
-    list-style: none;
-    padding: 0;
-    margin:auto;
-    text-align:center;
-}
-#qReference ul li:hover{
-    transform: scale(1.1, 1.1);
-}
-#qReference h2{
-    overflow: hidden;
-}
-.container .cell2 img{
-    margin-top: 11%;
-    width: 100%;
-
 }
 
 /*=============== */
