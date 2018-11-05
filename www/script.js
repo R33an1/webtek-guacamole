@@ -134,27 +134,48 @@ if (document.querySelector("footer")) {
 }
 
 //Font size changer
+const fontSizes = ["100%", "125%", "150%"];
 const fontSizeList1 = ["1em", "1.125em", "1.25em", "1.375em", "1.5em"]
 const fontSizeList2 = ["1.5em", "1.6875em", "1.875em", "2.0625em", "2.25em"]
-var i = 0
-
-const fSLP = document.querySelectorAll("p");
-const fSLC = document.querySelectorAll(".container h2")
+let i = 0
 
 
-function fontSizeReciver() {
-    if (i < fontSizeList1.length - 1) {
+if (document.querySelector("#fontSize")) {
+    let textEls = [];    
+    textEls.push(document.querySelectorAll("p"));
+    textEls.push(document.querySelectorAll("h2"));
+    textEls.push(document.querySelectorAll("li"));
+
+    document.querySelector("#fontSize").addEventListener("click", () => {
+        fontResize(textEls);
+    });
+}
+
+
+function fontResize(elements) {
+    if (i < fontSizes.length - 1) {
         i += 1
     } else {
         i = 0
     }
+
+    console.log(elements);
+    
+
+    for(element of elements){
+        element.forEach((x) => {x.style.fontSize = fontSizes[i]});
+        //element.style.fontSize = fontSizeList1[i];
+    }
+
+    /*
     for (var n = 0; n < fSLP.length; n++) {
         fSLP[n].style.fontSize = fontSizeList1[i];
     }
     for (var v = 0; v < fSLC.length; v++) {
         fSLC[v].style.fontSize = fontSizeList2[i];
-    }
+    }*/
 }
+
 //Mobile navbar
 
 if (document.querySelector("#navMobile>div")) {
@@ -183,9 +204,9 @@ if (document.querySelector("#navMobile>div")) {
 
 // bildegalleri
 
-if(document.querySelector(".mySlides")){
+if (document.querySelector(".mySlides")) {
     var slideIndex = 1;
-    showSlides(slideIndex);    
+    showSlides(slideIndex);
 }
 
 function plusSlides(n) {

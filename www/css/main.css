@@ -509,7 +509,7 @@ footer div div h4 {
     background-color: #F2B632;
     border-bottom: 4px solid #252839;
     vertical-align: middle;
-    font-size: 1.5em;
+    /*font-size: 1.5em;*/
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     font-family: 'Spectral SC';
@@ -551,12 +551,12 @@ footer div div h4 {
     }
 }
 /*Font size buttons*/
-.fontSize{
+#fontSize{
     width: auto;
     float: right;
     display: block;
     position: sticky;
-    top: 14vh;
+    top: 12vh;
     text-align: center;
     width: 2%;
     z-index: 2;
@@ -566,9 +566,11 @@ footer div div h4 {
     border-bottom: 4px solid #F2B632;
     box-shadow: 0 0 5px #252839;
     transition: all 0.5s;
-    color: white
+    color: white;
+
+    cursor: pointer;
 }
-.fontSize:hover{
+#fontSize:hover{
     transform: scale(1.1, 1.1);
 
 }
