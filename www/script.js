@@ -238,6 +238,9 @@ function showSlides(n) {
     captionText.innerHTML = dots[slideIndex  -1].alt;
 }
 
+var bull = document.getElementById("bull");
+bull.addEventListener("dblclick",play())
+
 function play(){
     var audio = document.getElementById("audio");
     audio.play();   
