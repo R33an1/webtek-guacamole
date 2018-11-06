@@ -60,7 +60,7 @@
 #navMobile{
     width: 100%;
     display: none;
-    height: 10em;
+    height: 8vh;
     background-color: #252839;
     border-bottom: 4px solid #F2B632;
     top: 0; 
@@ -79,7 +79,7 @@
 #navMobile>div>i{
     vertical-align: middle;
     color: white;
-    font-size: 10em;
+    font-size: 8vh;
 }
 
 #navMobile>a>img{
@@ -93,7 +93,7 @@
 #navMobile>.content{
     position: absolute;
     left: 0;
-    top: 10em;
+    top: 8vh;
     background-color: #252839;
     color: white;
     display: none;
@@ -117,7 +117,7 @@
 
 #navMobile>.content>div>h3{
     font-family: 'Spectral SC';
-    font-size: 4em;
+    font-size: 4vh;
     font-weight: normal;
     text-align: center;
     vertical-align: middle;
@@ -145,7 +145,7 @@
 #navMobile>.content>div>ul>li{
     display: inline-block;
     font-family: 'Montserrat';
-    font-size: 3em;
+    font-size: 3vh;
     width: 100%;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -294,7 +294,7 @@ article {
 .drop .drop-title {
     width: 100%;
     display: block;
-    font-size: 28px;
+    font-size: 3vh;
     margin-top: 2.4vh;
     margin-bottom: 2.4vh;
 }
@@ -327,7 +327,7 @@ i {
 }
 
 .drop-content a {
-    font-size: 20px;
+    font-size: 2.5vh;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
     display: block;
