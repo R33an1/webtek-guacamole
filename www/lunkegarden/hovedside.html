@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="utf-8">
+    <title>WebTek Projekt</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Spectral+SC" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+    <div id="cover">
+        <img src="../img/lunkegarden/forside.jpg" alt="Garvergården">
+        <div class="hovedside">
+            <h1>Garvergården<h1>
+        </div>
+    </div>
+
+
+    <nav id="navDesktop"></nav>
+
+    <nav id="navMobile"></nav>
+
+    <div id="fontSize">
+        <i class="material-icons">format_size</i>
+    </div>
+
+    <article>
+        <div class="container">
+            <div class="cell1">
+                <h2>PLASSERING</h2>
+                <ul class="list">
+                    <li>Storgata 7B <br> 2408 Elverum</li>
+                </ul>
+            </div>
+
+            <div class="cell1">
+                <h2>NÆROMRÅDET</h2>
+                <div id="googleMap">
+                    <!--Google API stuff -->
+                </div>
+            </div>
+
+            <div class="cell1">
+                <h2>TRIVIA</h2>
+                <ul class="list">
+                    <li>Store Næringslivslokaler</li>
+                    <li>Gåavstand til Dagligvarebutikk</li>
+                    <li>Midt i Storgata</li>
+                </ul>
+            </div>
+
+            <div class="cell1 buttons">
+                <h2>Navigasjon</h2>
+                <ul>
+                    <a href="leilighet.html"><li>Leiligheter</li></a>
+                    <a href="bedrift.html"><li>Næringsliv</li></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="cell4">
+                <h2>FASILITETER</h2>
+                <p>
+                    Her skal det være en generell streng med tekst.
+                </p>
+                <div class="container">
+                    <ul class="list">
+                        <li>Rullestoltilgjengelig</li>
+                        <li>God kundeparkering</li>
+                        <li>Lett tilgjengelig varelevering</li>
+                    </ul>
+
+                    <ul class="list">
+                        <li>Forretningslokaler bestående av</li>
+                        <ul>
+                            <li>Kiropraktorehuset</li>
+                            <li> Elverum Fotklinikk</li>
+                            <li>Hartz Dental AS</li>
+                        </ul>
+                    </ul>
+
+                    <ul class="list">
+                        <li>Bod til lagring i kjeller</li>
+                        <li>Søppeltømming inkludert</li>
+                        <li>Snørydding inkludert</li>
+                    </ul>
+
+                    <ul class="list">
+                        <li>Mulighet for ansattparkering</li>
+                        <li>Mulighet for selvvalgt strømleverandør</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="cell2" id="naromrade">
+                <h2>NÆROMRÅDET</h2>
+                <p>
+
+                </p>
+            </div>
+
+            <div class="cell2 gallery">
+
+                <div class="caption-container">
+                    <h2 id="caption">
+                    </h2>
+                </div>
+
+                <div class="picture">
+                    <div class="gallery-image"></div>
+                    <img src="../img/lunkegarden/B1.jpg">
+                </div>
+
+                <div class="picture">
+                    <div class="gallery-image"></div>
+                    <img src="../img/lunkegarden/B2.jpg">
+                </div>
+
+                <div class="picture">
+                    <div class="gallery-image"></div>
+                    <img src="../img/lunkegarden/B3.jpg">
+                </div>
+
+                <a class="forrige" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="neste" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Endre til lavere resolution? -->
+                <div class="row">
+                    <div class="column">
+                        <img class="select" src="../img/lunkegarden/B1.jpg" onclick="currentSlide(1)"
+                            alt="Kiwi Garvergården">
+                    </div>
+                    <div class="column">
+                        <img class="select" src="../img/lunkegarden/B2.jpg" onclick="currentSlide(2)"
+                            alt="Trær ved parkering">
+                    </div>
+                    <div class="column">
+                        <img class="select" src="../img/lunkegarden/B3.jpg" onclick="currentSlide(3)"
+                            alt="Kiwi Garvergården">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer></footer>
+
+    <script type="text/javascript" src="../script.js"></script>
+    <script src="map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAorr_aJ31sg5YCpnjRmu7Pn6LtutiViow&callback=myMap"></script>
+</body>
+
+</html>
