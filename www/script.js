@@ -118,8 +118,8 @@ if (document.querySelector("footer")) {
         "<h4>Kontaktinformasjon</h4>" +
         "</div>" +
         "<div>" +
-        "Telefon: <br>" +
-        "E-Post:" +
+        "Telefon: +47 913 11 422<br>" +
+        "E-Post: lunke@me.com" +
         "</div>" +
         "</div>" +
         "<div>" +
@@ -127,8 +127,8 @@ if (document.querySelector("footer")) {
         "<h4>Besøksinformasjon</h4>" +
         "</div>" +
         "<div>" +
-        "Åpningstider: <br>" +
-        "Adresse:" +
+        "Åpningstider: 09:00-15:00<br>" +
+        "Adresse: Storgata 7, 2408 Elverum" +
         "</div>" +
         "</div>");
 }
