@@ -203,7 +203,7 @@ if (document.querySelector("#navMobile>div")) {
 
 // bildegalleri
 
-if (document.querySelector(".mySlides")) {
+if (document.querySelector(".picture")) {
     var slideIndex = 1;
     showSlides(slideIndex);
 }
@@ -218,8 +218,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
+    var slides = document.getElementsByClassName("picture");
+    var dots = document.getElementsByClassName("select");
     var captionText = document.getElementById("caption");
     if (n > slides.length) {
         slideIndex = 1;
@@ -235,5 +235,5 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
-    captionText.innerHTML = dots[slideIndex + 2].alt;
+    captionText.innerHTML = dots[slideIndex  -1].alt;
 }
