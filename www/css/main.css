@@ -58,6 +58,7 @@
     .picture img{
         max-height: 30vh !important;
     }
+
       #googleMap{
         height: 30vh !important;
 
@@ -166,7 +167,11 @@
 }
 
 #navMobile>.content>div>ul>li>a:visited{
-    color: white;
+    color:#FEFEFE;
+}
+
+#navMobile>.content>div>ul>li>a:active{
+    color: #FEFEFE;
 }
 
 /* GENERAL */
