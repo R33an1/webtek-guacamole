@@ -167,9 +167,11 @@ p {
     display: block;
     padding: 0.5em;
     margin: 0;
+    font-size: 1.17em;
 }
 
 .list {
+    font-size: 1.17em;
     font-family: 'Montserrat';
     list-style-type: disc;
     padding: 0;
