@@ -71,7 +71,7 @@ if (document.querySelector("#navMobile")) {
         "<a href=\"../lunkegarden/hovedside.html\">Hovedside</a>" +
         "</li>" +
         "<li>" +
-        "<a href=\"../lunkegarden/leilihet.html\">Leiligheter</a>" +
+        "<a href=\"../lunkegarden/leilighet.html\">Leiligheter</a>" +
         "</li>" +
         "<li>" +
         "<a href=\"../lunkegarden/bedrift.html\">Næringsliv</a>" +
