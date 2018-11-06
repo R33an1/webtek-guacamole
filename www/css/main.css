@@ -21,7 +21,18 @@
     }
 
     h2{
-        font-size: 2.5em !important;
+        font-size: 3em !important;
+    }
+
+    p, .list li{
+        font-size: 2.17em !important;
+    }
+
+    .list{
+        width: auto !important;
+        padding-left: 3.5em !important;
+        margin: 1em 0 !important;
+        display: block !important;
     }
 
     footer{
@@ -29,7 +40,7 @@
     }
 
     footer>div{
-        font-size: 2em;
+        font-size: 2em !important;
         width: 100% !important;
         margin: 0 !important;
     }
