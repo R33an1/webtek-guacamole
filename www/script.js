@@ -14,9 +14,9 @@ if (document.querySelector("#navDesktop")) {
         "<li class=\"drop\">" +
         "<div class=\"drop-title\">Lunkegården <i class=\"material-icons\">arrow_drop_down</i></div>" +
         "<div class=\"drop-content\">" +
-        "<a href=\"#\">Hoveside</a>" +
-        "<a href=\"#\">Leiligheter</a>" +
-        "<a href=\"#\">Næringsliv</a>" +
+        "<a href=\"../lunkegarden/hovedside.html\">Hoveside</a>" +
+        "<a href=\"../lunkegarden/leilighet.html\">Leiligheter</a>" +
+        "<a href=\"../lunkegarden/bedrift.html\">Næringsliv</a>" +
         "</div>" +
         "</li>" +
         "<li class=\"drop\">" +
@@ -25,17 +25,17 @@ if (document.querySelector("#navDesktop")) {
         "<li class=\"drop\">" +
         "<div class=\"drop-title\">Parkgården <i class=\"material-icons\">arrow_drop_down</i></div>" +
         "<div class=\"drop-content\">" +
-        "<a href=\"#\">Hoveside</a>" +
-        "<a href=\"#\">Leiligheter</a>" +
-        "<a href=\"#\">Næringsliv</a>" +
+        "<a href=\"../parkgarden/hovedside.html\">Hoveside</a>" +
+        "<a href=\"../parkgarden/leilighet.html\">Leiligheter</a>" +
+        "<a href=\"../parkgarden/bedrift.html\">Næringsliv</a>" +
         "</div>" +
         "</li>" +
         "<li class=\"drop\">" +
         "<div class=\"drop-title\">Gimle <i class=\"material-icons\">arrow_drop_down</i></div>" +
         "<div class=\"drop-content\">" +
-        "<a href=\"#\">Hoveside</a>" +
-        "<a href=\"#\">Leiligheter</a>" +
-        "<a href=\"#\">Næringsliv</a>" +
+        "<a href=\"../gimle/hovedside.html\">Hoveside</a>" +
+        "<a href=\"../gimle/leilighet.html\">Leiligheter</a>" +
+        "<a href=\"../gimle/bedrift.html\">Næringsliv</a>" +
         "</div>" +
         "</li>" +
         "</ul>"
@@ -68,13 +68,13 @@ if (document.querySelector("#navMobile")) {
         "<h3>Lunkegården <i class=\"material-icons\">arrow_drop_down</i></h3>" +
         "<ul>" +
         "<li>" +
-        "<a href=\"\">Hovedside</a>" +
+        "<a href=\"../lunkegarden/hovedside.html\">Hovedside</a>" +
         "</li>" +
         "<li>" +
-        "<a href=\"\">Leiligheter</a>" +
+        "<a href=\"../lunkegarden/leilihet.html\">Leiligheter</a>" +
         "</li>" +
         "<li>" +
-        "<a href=\"\">Næringsliv</a>" +
+        "<a href=\"../lunkegarden/bedrift.html\">Næringsliv</a>" +
         "</li>" +
         "</ul>" +
         "</div>" +
@@ -82,13 +82,13 @@ if (document.querySelector("#navMobile")) {
         "<h3>Parkgården <i class=\"material-icons\">arrow_drop_down</i></h3>" +
         "<ul>" +
         "<li>" +
-        "<a href=\"\">Hovedside</a>" +
+        "<a href=\"../parkgarden/hovedside.html\">Hovedside</a>" +
         "</li>" +
         "<li>" +
-        "<a href=\"\">Leiligheter</a>" +
+        "<a href=\"../parkgarden/leilighet.html\">Leiligheter</a>" +
         "</li>" +
         "<li>" +
-        "<a href=\"\">Næringsliv</a>" +
+        "<a href=\"../parkgarden/bedrift.html\">Næringsliv</a>" +
         "</li>" +
         "</ul>" +
         "</div>" +
@@ -96,13 +96,13 @@ if (document.querySelector("#navMobile")) {
         "<h3>Gimle <i class=\"material-icons\">arrow_drop_down</i></h3>" +
         "<ul>" +
         "<li>" +
-        "<a href=\"\">Hovedside</a>" +
+        "<a href=\"../gimle/hovedside.html\">Hovedside</a>" +
         "</li>" +
         "<li>" +
-        "<a href=\"\">Leiligheter</a>" +
+        "<a href=\"../gimle/leilighet.html\">Leiligheter</a>" +
         "</li>" +
         "<li>" +
-        "<a href=\"\">Næringsliv</a>" +
+        "<a href=\"../gimle/bedrift.html\">Næringsliv</a>" +
         "</li>" +
         "</ul>" +
         "</div>" +
