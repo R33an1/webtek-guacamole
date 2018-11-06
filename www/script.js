@@ -134,51 +134,45 @@ if (document.querySelector("footer")) {
 }
 
 //Font size changer
-const fontSizes = ["100%", "125%", "150%"];
-const fontSizeList1 = ["1em", "1.125em", "1.25em", "1.375em", "1.5em"]
-const fontSizeList2 = ["1.5em", "1.6875em", "1.875em", "2.0625em", "2.25em"]
-let sizes = {p: 0, h2: 0, li: 0};
-
+let count = 1;
+let multiplier = 1.25; //Størrelse på endring
 
 if (document.querySelector("#fontSize")) {
-    let textEls = [];    
+    let textEls = [];
     textEls.push(document.querySelectorAll("p"));
-    sizes.p = document.querySelector("p").style.fontSize;
-
+    textEls.push(document.querySelectorAll(".list>li"));
     textEls.push(document.querySelectorAll("h2"));
-    sizes.h2 = document.querySelector("h2").style.fontSize;
-
-    textEls.push(document.querySelectorAll("li"));
-    sizes.li = document.querySelector("li").style.fontSize;
 
     document.querySelector("#fontSize").addEventListener("click", () => {
         fontResize(textEls);
     });
 }
 
-
 function fontResize(elements) {
-    if (sizes.length < 3) {
-        
+    if (count < 3) {
+
+        for (element of elements) {
+            element.forEach((x) => {
+                let size = window.getComputedStyle(x).getPropertyValue("font-size"); //Henter nåværende tekststørrelse
+                size = parseFloat(size.substr(0, size.length - 2)); //Henter kun tallverdien
+
+                x.style.fontSize = size * multiplier + "px"; //Endrer tallverdien ved å gange med multiplier
+            });
+        }
     } else {
-        i = 0
-    }
+        count = 0;
+        for (element of elements) {
+            element.forEach((x) => {
+                for (i = 0; i < 2; i++) {
+                    let size = window.getComputedStyle(x).getPropertyValue("font-size"); 
+                    size = parseFloat(size.substr(0, size.length - 2));
 
-    console.log(elements);
-    
-
-    for(element of elements){
-        element.forEach((x) => {x.style.fontSize = fontSizes[i]});
-        //element.style.fontSize = fontSizeList1[i];
+                    x.style.fontSize = size / multiplier + "px"; //Gjør motsatt utregning av det ovenpå.
+                }
+            });
+        }
     }
-
-    /*
-    for (var n = 0; n < fSLP.length; n++) {
-        fSLP[n].style.fontSize = fontSizeList1[i];
-    }
-    for (var v = 0; v < fSLC.length; v++) {
-        fSLC[v].style.fontSize = fontSizeList2[i];
-    }*/
+    count += 1;
 }
 
 //Mobile navbar
