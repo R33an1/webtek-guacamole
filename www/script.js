@@ -137,14 +137,19 @@ if (document.querySelector("footer")) {
 const fontSizes = ["100%", "125%", "150%"];
 const fontSizeList1 = ["1em", "1.125em", "1.25em", "1.375em", "1.5em"]
 const fontSizeList2 = ["1.5em", "1.6875em", "1.875em", "2.0625em", "2.25em"]
-let i = 0
+let sizes = {p: 0, h2: 0, li: 0};
 
 
 if (document.querySelector("#fontSize")) {
     let textEls = [];    
     textEls.push(document.querySelectorAll("p"));
+    sizes.p = document.querySelector("p").style.fontSize;
+
     textEls.push(document.querySelectorAll("h2"));
+    sizes.h2 = document.querySelector("h2").style.fontSize;
+
     textEls.push(document.querySelectorAll("li"));
+    sizes.li = document.querySelector("li").style.fontSize;
 
     document.querySelector("#fontSize").addEventListener("click", () => {
         fontResize(textEls);
@@ -153,8 +158,8 @@ if (document.querySelector("#fontSize")) {
 
 
 function fontResize(elements) {
-    if (i < fontSizes.length - 1) {
-        i += 1
+    if (sizes.length < 3) {
+        
     } else {
         i = 0
     }
