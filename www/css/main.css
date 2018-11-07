@@ -218,7 +218,7 @@
     color:#FEFEFE;
 }
 
-#navMobile>.content>div>ul>li>a:active{
+#navMobile>.content>div>ul>li>a:link{
     color: #FEFEFE;
 }
 
