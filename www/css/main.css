@@ -27,6 +27,9 @@
     h2{
         font-size: 3em !important;
     }
+    p{
+        margin: 0 0.5em !important;
+    }
 
     .list{
         width: auto !important;
@@ -72,10 +75,10 @@
     height: 8vh;
     background-color: #252839;
     border-bottom: 4px solid #F2B632;
-    top: 0; 
+    top: 0;
     position: sticky;
     z-index: 5;
-    
+
 }
 
 #navMobile>div{
