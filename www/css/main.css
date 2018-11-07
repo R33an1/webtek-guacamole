@@ -312,6 +312,22 @@ article {
     margin-bottom: 2.4vh;
 }
 
+.garvergarden .drop:nth-child(1){
+    color: #F2B632;
+}
+
+.lunkegarden .drop:nth-child(2){
+    color: #F2B632;
+}
+
+.parkgarden .drop:nth-child(4){
+    color: #F2B632;
+}
+
+.gimle .drop:nth-child(5){
+    color: #F2B632;
+}
+
 .drop #home img {
     display: inline-block;
     width: 40%;
