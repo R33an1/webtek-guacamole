@@ -2,40 +2,46 @@ if (document.querySelector("#navDesktop")) {
 
     const headerDesktop = document.querySelector("#navDesktop");
 
+    let prefix = "../";
+
+    if(document.querySelector("#navDesktop.index")){
+        prefix = "";
+    }
+
     headerDesktop.innerHTML = ("<ul>" +
         "<li class=\"drop\">" +
         "<div class=\"drop-title\">Garvergården <i class=\"material-icons\">arrow_drop_down</i></div>" +
         "<div class=\"drop-content\">" +
-        "<a href=\"../garvergarden/hovedside.html\">Hoveside</a>" +
-        "<a href=\"../garvergarden/leilighet.html\">Leiligheter</a>" +
-        "<a href=\"../garvergarden/bedrift.html\">Næringsliv</a>" +
+        "<a href=\"" + prefix + "garvergarden/hovedside.html\">Hoveside</a>" +
+        "<a href=\"" + prefix + "garvergarden/leilighet.html\">Leiligheter</a>" +
+        "<a href=\"" + prefix + "garvergarden/bedrift.html\">Næringsliv</a>" +
         "</div>" +
         "</li>" +
         "<li class=\"drop\">" +
         "<div class=\"drop-title\">Lunkegården <i class=\"material-icons\">arrow_drop_down</i></div>" +
         "<div class=\"drop-content\">" +
-        "<a href=\"../lunkegarden/hovedside.html\">Hoveside</a>" +
-        "<a href=\"../lunkegarden/leilighet.html\">Leiligheter</a>" +
-        "<a href=\"../lunkegarden/bedrift.html\">Næringsliv</a>" +
+        "<a href=\"" + prefix + "lunkegarden/hovedside.html\">Hoveside</a>" +
+        "<a href=\"" + prefix + "lunkegarden/leilighet.html\">Leiligheter</a>" +
+        "<a href=\"" + prefix + "lunkegarden/bedrift.html\">Næringsliv</a>" +
         "</div>" +
         "</li>" +
         "<li class=\"drop\">" +
-        "<a id=\"home\" href=\"../index.html\"><img src=\"../img/logo.png\"></a>" +
+        "<a id=\"home\" href=\"" + prefix + "index.html\"><img src=\"" + prefix + "img/logo.png\"></a>" +
         "</li>" +
         "<li class=\"drop\">" +
         "<div class=\"drop-title\">Parkgården <i class=\"material-icons\">arrow_drop_down</i></div>" +
         "<div class=\"drop-content\">" +
-        "<a href=\"../parkgarden/hovedside.html\">Hoveside</a>" +
-        "<a href=\"../parkgarden/leilighet.html\">Leiligheter</a>" +
-        "<a href=\"../parkgarden/bedrift.html\">Næringsliv</a>" +
+        "<a href=\"" + prefix + "parkgarden/hovedside.html\">Hoveside</a>" +
+        "<a href=\"" + prefix + "parkgarden/leilighet.html\">Leiligheter</a>" +
+        "<a href=\"" + prefix + "parkgarden/bedrift.html\">Næringsliv</a>" +
         "</div>" +
         "</li>" +
         "<li class=\"drop\">" +
         "<div class=\"drop-title\">Gimle <i class=\"material-icons\">arrow_drop_down</i></div>" +
         "<div class=\"drop-content\">" +
-        "<a href=\"../gimle/hovedside.html\">Hoveside</a>" +
-        "<a href=\"../gimle/leilighet.html\">Leiligheter</a>" +
-        "<a href=\"../gimle/bedrift.html\">Næringsliv</a>" +
+        "<a href=\"" + prefix + "gimle/hovedside.html\">Hoveside</a>" +
+        "<a href=\"" + prefix + "gimle/leilighet.html\">Leiligheter</a>" +
+        "<a href=\"" + prefix + "gimle/bedrift.html\">Næringsliv</a>" +
         "</div>" +
         "</li>" +
         "</ul>"
@@ -45,22 +51,28 @@ if (document.querySelector("#navDesktop")) {
 if (document.querySelector("#navMobile")) {
     const headerMobile = document.querySelector("#navMobile");
 
+    let prefix = "../";
+
+    if(document.querySelector("#navMobile.index")){
+        prefix = "";
+    }
+
     headerMobile.innerHTML = ("<div>" +
         "<i class=\"material-icons\">view_headline</i>" +
         "</div>" +
-        "<a href=\"../index.html\"><img src=\"../img/logo.png\" alt=\"Logo\"></a>" +
+        "<a href=\"" + prefix + "index.html\"><img src=\"" + prefix + "img/logo.png\" alt=\"Logo\"></a>" +
         "<div class=\"content\">" +
         "<div>" +
         "<h3>Garvergården <i class=\"material-icons\">arrow_drop_down</i></h3>" +
         "<ul>" +
         "<li>" +
-        "<a href=\"../garvergarden/hovedside.html\">Hovedside</a>" +
+        "<a href=\"" + prefix + "garvergarden/hovedside.html\">Hovedside</a>" +
         "</li>" +
         "<li>" +
-        "<a href=\"../garvergarden/leilighet.html\">Leiligheter</a>" +
+        "<a href=\"" + prefix + "garvergarden/leilighet.html\">Leiligheter</a>" +
         "</li>" +
         "<li>" +
-        "<a href=\"../garvergarden/bedrift.html\">Næringsliv</a>" +
+        "<a href=\"" + prefix + "garvergarden/bedrift.html\">Næringsliv</a>" +
         "</li>" +
         "</ul>" +
         "</div>" +
@@ -68,13 +80,13 @@ if (document.querySelector("#navMobile")) {
         "<h3>Lunkegården <i class=\"material-icons\">arrow_drop_down</i></h3>" +
         "<ul>" +
         "<li>" +
-        "<a href=\"../lunkegarden/hovedside.html\">Hovedside</a>" +
+        "<a href=\"" + prefix + "lunkegarden/hovedside.html\">Hovedside</a>" +
         "</li>" +
         "<li>" +
-        "<a href=\"../lunkegarden/leilighet.html\">Leiligheter</a>" +
+        "<a href=\"" + prefix + "lunkegarden/leilighet.html\">Leiligheter</a>" +
         "</li>" +
         "<li>" +
-        "<a href=\"../lunkegarden/bedrift.html\">Næringsliv</a>" +
+        "<a href=\"" + prefix + "lunkegarden/bedrift.html\">Næringsliv</a>" +
         "</li>" +
         "</ul>" +
         "</div>" +
@@ -82,13 +94,13 @@ if (document.querySelector("#navMobile")) {
         "<h3>Parkgården <i class=\"material-icons\">arrow_drop_down</i></h3>" +
         "<ul>" +
         "<li>" +
-        "<a href=\"../parkgarden/hovedside.html\">Hovedside</a>" +
+        "<a href=\"" + prefix + "parkgarden/hovedside.html\">Hovedside</a>" +
         "</li>" +
         "<li>" +
-        "<a href=\"../parkgarden/leilighet.html\">Leiligheter</a>" +
+        "<a href=\"" + prefix + "parkgarden/leilighet.html\">Leiligheter</a>" +
         "</li>" +
         "<li>" +
-        "<a href=\"../parkgarden/bedrift.html\">Næringsliv</a>" +
+        "<a href=\"" + prefix + "parkgarden/bedrift.html\">Næringsliv</a>" +
         "</li>" +
         "</ul>" +
         "</div>" +
@@ -96,13 +108,13 @@ if (document.querySelector("#navMobile")) {
         "<h3>Gimle <i class=\"material-icons\">arrow_drop_down</i></h3>" +
         "<ul>" +
         "<li>" +
-        "<a href=\"../gimle/hovedside.html\">Hovedside</a>" +
+        "<a href=\"" + prefix + "gimle/hovedside.html\">Hovedside</a>" +
         "</li>" +
         "<li>" +
-        "<a href=\"../gimle/leilighet.html\">Leiligheter</a>" +
+        "<a href=\"" + prefix + "gimle/leilighet.html\">Leiligheter</a>" +
         "</li>" +
         "<li>" +
-        "<a href=\"../gimle/bedrift.html\">Næringsliv</a>" +
+        "<a href=\"" + prefix + "gimle/bedrift.html\">Næringsliv</a>" +
         "</li>" +
         "</ul>" +
         "</div>" +

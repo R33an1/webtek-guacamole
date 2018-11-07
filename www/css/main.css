@@ -133,6 +133,22 @@
     margin: 0.5em;
 }
 
+#navMobile.garvergarden>.content>div:nth-child(1)>h3{
+    color: #F2B632;
+}
+
+#navMobile.lunkegarden>.content>div:nth-child(2)>h3{
+    color: #F2B632;
+}
+
+#navMobile.parkgarden>.content>div:nth-child(3)>h3{
+    color: #F2B632;
+}
+
+#navMobile.gimle>.content>div:nth-child(4)>h3{
+    color: #F2B632;
+}
+
 #navMobile>.content>div>h3>i{
     font-size: inherit;
 }
