@@ -18,6 +18,21 @@
 
     .card{
         transform: none !important;
+        width: 100vw !important;   
+    }
+
+    .card+.card{
+        margin-left: 3em;
+    }
+
+    .cards{
+        width: 100% !important;
+        overflow: auto !important;
+        white-space: nowrap !important;
+    }
+
+    .cards:after {
+        display: none !important;
     }
 
     article{
@@ -539,7 +554,7 @@ footer div div h4 {
 
 .card .options {
     font-family: 'Montserrat';
-    font-size: 1.2em;
+    font-size: 1.17em;
     display: block;
     width: auto;
     text-decoration: none;
