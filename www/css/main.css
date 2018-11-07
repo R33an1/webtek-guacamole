@@ -187,6 +187,15 @@ a:visited{
     color: inherit;
 }
 
+h1{
+    margin: auto;
+    font-family: 'Spectral SC';
+    display: block;
+    color: #252839;
+    font-size: 3em;
+    font-weight: normal;
+}
+
 h2 {
     margin: auto;
     font-family: 'Spectral SC';
