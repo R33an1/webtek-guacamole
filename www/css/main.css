@@ -430,8 +430,6 @@ footer div div h4 {
     object-fit: cover;
     display: block;
     position: relative;
-    padding: auto;
-
     animation: cLogo 2s linear;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
