@@ -669,10 +669,6 @@ footer div div h4 {
     cursor: pointer;
 }
 
-#fontSize.forside{
-    top: 2vh !important;
-}
-
 #fontSize:hover{
     transform: scale(1.1, 1.1);
 
