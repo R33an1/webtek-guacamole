@@ -136,6 +136,22 @@
     margin: 0.5em;
 }
 
+#navMobile.garvergarden>.content>div:nth-child(1)>h3{
+    color: #F2B632;
+}
+
+#navMobile.lunkegarden>.content>div:nth-child(2)>h3{
+    color: #F2B632;
+}
+
+#navMobile.parkgarden>.content>div:nth-child(3)>h3{
+    color: #F2B632;
+}
+
+#navMobile.gimle>.content>div:nth-child(4)>h3{
+    color: #F2B632;
+}
+
 #navMobile>.content>div>h3>i{
     font-size: inherit;
 }
@@ -313,6 +329,22 @@ article {
     font-size: 3vh;
     margin-top: 2.4vh;
     margin-bottom: 2.4vh;
+}
+
+.garvergarden .drop:nth-child(1){
+    color: #F2B632;
+}
+
+.lunkegarden .drop:nth-child(2){
+    color: #F2B632;
+}
+
+.parkgarden .drop:nth-child(4){
+    color: #F2B632;
+}
+
+.gimle .drop:nth-child(5){
+    color: #F2B632;
 }
 
 .drop #home img {
