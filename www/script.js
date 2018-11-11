@@ -12,7 +12,7 @@ if (document.querySelector("#navDesktop")) {
         "<li class=\"drop\">" +
         "<div class=\"drop-title\">Garvergården <i class=\"material-icons\">arrow_drop_down</i></div>" +
         "<div class=\"drop-content\">" +
-        "<a href=\"" + prefix + "garvergarden/hovedside.html\">Hoveside</a>" +
+        "<a href=\"" + prefix + "garvergarden/hovedside.html\">Hovedside</a>" +
         "<a href=\"" + prefix + "garvergarden/leilighet.html\">Leiligheter</a>" +
         "<a href=\"" + prefix + "garvergarden/bedrift.html\">Næringsliv</a>" +
         "</div>" +
@@ -20,7 +20,7 @@ if (document.querySelector("#navDesktop")) {
         "<li class=\"drop\">" +
         "<div class=\"drop-title\">Lunkegården <i class=\"material-icons\">arrow_drop_down</i></div>" +
         "<div class=\"drop-content\">" +
-        "<a href=\"" + prefix + "lunkegarden/hovedside.html\">Hoveside</a>" +
+        "<a href=\"" + prefix + "lunkegarden/hovedside.html\">Hovedside</a>" +
         "<a href=\"" + prefix + "lunkegarden/leilighet.html\">Leiligheter</a>" +
         "<a href=\"" + prefix + "lunkegarden/bedrift.html\">Næringsliv</a>" +
         "</div>" +
@@ -31,7 +31,7 @@ if (document.querySelector("#navDesktop")) {
         "<li class=\"drop\">" +
         "<div class=\"drop-title\">Parkgården <i class=\"material-icons\">arrow_drop_down</i></div>" +
         "<div class=\"drop-content\">" +
-        "<a href=\"" + prefix + "parkgarden/hovedside.html\">Hoveside</a>" +
+        "<a href=\"" + prefix + "parkgarden/hovedside.html\">Hovedside</a>" +
         "<a href=\"" + prefix + "parkgarden/leilighet.html\">Leiligheter</a>" +
         "<a href=\"" + prefix + "parkgarden/bedrift.html\">Næringsliv</a>" +
         "</div>" +
@@ -39,7 +39,7 @@ if (document.querySelector("#navDesktop")) {
         "<li class=\"drop\">" +
         "<div class=\"drop-title\">Gimle <i class=\"material-icons\">arrow_drop_down</i></div>" +
         "<div class=\"drop-content\">" +
-        "<a href=\"" + prefix + "gimle/hovedside.html\">Hoveside</a>" +
+        "<a href=\"" + prefix + "gimle/hovedside.html\">Hovedside</a>" +
         "<a href=\"" + prefix + "gimle/leilighet.html\">Leiligheter</a>" +
         "<a href=\"" + prefix + "gimle/bedrift.html\">Næringsliv</a>" +
         "</div>" +
