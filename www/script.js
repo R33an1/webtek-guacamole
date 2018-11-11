@@ -1,13 +1,15 @@
+//Leter etter element med id navDesktop. 
 if (document.querySelector("#navDesktop")) {
 
     const headerDesktop = document.querySelector("#navDesktop");
 
     let prefix = "../";
-
-    if(document.querySelector("#navDesktop.index")){
+    //Prefixer filplassering utifra om man er på desktop siden.
+    if (document.querySelector("#navDesktop.index")) {
         prefix = "";
     }
 
+    //Legger til html kode i form av string til navbar elementet. 
     headerDesktop.innerHTML = ("<ul>" +
         "<li class=\"drop\">" +
         "<div class=\"drop-title\">Garvergården <i class=\"material-icons\">arrow_drop_down</i></div>" +
@@ -48,12 +50,13 @@ if (document.querySelector("#navDesktop")) {
     );
 }
 
+//Fungerer likt som over
 if (document.querySelector("#navMobile")) {
     const headerMobile = document.querySelector("#navMobile");
 
     let prefix = "../";
 
-    if(document.querySelector("#navMobile.index")){
+    if (document.querySelector("#navMobile.index")) {
         prefix = "";
     }
 
@@ -122,6 +125,7 @@ if (document.querySelector("#navMobile")) {
     );
 }
 
+//Fungerer likt som over
 if (document.querySelector("footer")) {
     const footer = document.querySelector("footer");
 
@@ -149,6 +153,7 @@ if (document.querySelector("footer")) {
 let count = 1;
 let multiplier = 1.25; //Størrelse på endring
 
+//Sjekker om font size knappen er tilstedet. 
 if (document.querySelector("#fontSize")) {
     let textEls = [];
     textEls.push(document.querySelectorAll("p"));
@@ -176,10 +181,10 @@ function fontResize(elements) {
         for (element of elements) {
             element.forEach((x) => {
                 for (i = 0; i < 2; i++) {
-                    let size = window.getComputedStyle(x).getPropertyValue("font-size"); 
+                    let size = window.getComputedStyle(x).getPropertyValue("font-size");
                     size = parseFloat(size.substr(0, size.length - 2));
 
-                    x.style.fontSize = size / multiplier + "px"; //Gjør motsatt utregning av det ovenpå.
+                    x.style.fontSize = size / multiplier + "px"; //Gjør motsatt utregning av det ovenpå for å nullstille.
                 }
             });
         }
@@ -188,23 +193,22 @@ function fontResize(elements) {
 }
 
 //Mobile navbar
-
 if (document.querySelector("#navMobile>div")) {
     const navButton = document.querySelector("#navMobile>div");
     const navContent = document.querySelector("#navMobile>.content");
     const navContentHeaders = document.querySelectorAll("#navMobile>.content>div");
 
+    //Legger til eventlistener til mobil navbar, for å åpne og lukke menyen. 
     navButton.addEventListener('click', () => {
-        if (navContent.style.display == "none") {
-            navContent.style.display = "block";
-        } else {
+        if (navContent.style.display == "block") {
             navContent.style.display = "none";
+        } else {
+            navContent.style.display = "block";
         }
     });
 
     navContentHeaders.forEach((x) => x.addEventListener('click', (event) => {
         let ele = event.currentTarget.children[1].style;
-        //console.log(ele);
         if (ele.display == "") {
             ele.display = "block";
         } else {
@@ -213,10 +217,9 @@ if (document.querySelector("#navMobile>div")) {
     }));
 }
 
-// bildegalleri
-
+// Bildegalleri
 if (document.querySelector(".picture")) {
-    var slideIndex = 1;
+    let slideIndex = 1;
     showSlides(slideIndex);
 }
 
@@ -229,28 +232,33 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("picture");
-    var dots = document.getElementsByClassName("select");
-    var captionText = document.getElementById("caption");
+    let i;
+    let slides = document.getElementsByClassName("picture");
+    let dots = document.getElementsByClassName("select");
+    let captionText = document.getElementById("caption");
+
     if (n > slides.length) {
         slideIndex = 1;
-    }
-    if (n < 1) {
+    } else if (n < 1) {
         slideIndex = slides.length;
     }
+
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
+
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
+
+    //Viser gjeldende bilde
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
-    captionText.innerHTML = dots[slideIndex  -1].alt;
+    captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 
-function play(){
+//easter egg :)
+function play() {
     var audio = document.getElementById("audio");
-    audio.play();   
+    audio.play();
 }
