@@ -219,7 +219,7 @@ if (document.querySelector("#navMobile>div")) {
 
 // Bildegalleri
 if (document.querySelector(".picture")) {
-    let slideIndex = 1;
+    var slideIndex = 1;
     showSlides(slideIndex);
 }
 

@@ -23,7 +23,8 @@ img {
     width: 100%;
 }
 
-#referencePic, #mobilPic {
+#referencePic,
+#mobilPic {
     float: right;
     width: 20%;
     padding-left: 2%;
@@ -35,7 +36,8 @@ img {
     float: none;
 }
 
-th, td {
+th,
+td {
     padding: 15px;
     text-align: left;
     border: 2px solid black;
